@@ -764,15 +764,6 @@
 <a class="md-nav__link" href="#spacemacs-comment-key-bindings">
     Spacemacs comment key bindings
   </a>
-<nav aria-label="Spacemacs comment key bindings" class="md-nav">
-<ul class="md-nav__list">
-<li class="md-nav__item">
-<a class="md-nav__link" href="#infoevil-commentary-layer">
-    Info::Evil-commentary layer
-  </a>
-</li>
-</ul>
-</nav>
 </li>
 <li class="md-nav__item">
 <a class="md-nav__link" href="#clojure-comments">
@@ -787,20 +778,6 @@
 <li class="md-nav__item">
 <a class="md-nav__link" href="#creating-sections-with-line-comments">
     Creating sections with line comments
-  </a>
-<nav aria-label="Creating sections with line comments" class="md-nav">
-<ul class="md-nav__list">
-<li class="md-nav__item">
-<a class="md-nav__link" href="#hintmultiple-digit-repeats">
-    Hint::Multiple digit repeats
-  </a>
-</li>
-</ul>
-</nav>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="#classic-emacs-comments">
-    Classic Emacs comments
   </a>
 </li>
 </ul>
@@ -2297,15 +2274,6 @@
 <a class="md-nav__link" href="#spacemacs-comment-key-bindings">
     Spacemacs comment key bindings
   </a>
-<nav aria-label="Spacemacs comment key bindings" class="md-nav">
-<ul class="md-nav__list">
-<li class="md-nav__item">
-<a class="md-nav__link" href="#infoevil-commentary-layer">
-    Info::Evil-commentary layer
-  </a>
-</li>
-</ul>
-</nav>
 </li>
 <li class="md-nav__item">
 <a class="md-nav__link" href="#clojure-comments">
@@ -2321,20 +2289,6 @@
 <a class="md-nav__link" href="#creating-sections-with-line-comments">
     Creating sections with line comments
   </a>
-<nav aria-label="Creating sections with line comments" class="md-nav">
-<ul class="md-nav__list">
-<li class="md-nav__item">
-<a class="md-nav__link" href="#hintmultiple-digit-repeats">
-    Hint::Multiple digit repeats
-  </a>
-</li>
-</ul>
-</nav>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="#classic-emacs-comments">
-    Classic Emacs comments
-  </a>
 </li>
 </ul>
 </nav>
@@ -2347,8 +2301,8 @@
 <svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M20.71 7.04c.39-.39.39-1.04 0-1.41l-2.34-2.34c-.37-.39-1.02-.39-1.41 0l-1.84 1.83 3.75 3.75M3 17.25V21h3.75L17.81 9.93l-3.75-3.75L3 17.25Z"></path></svg>
 </a>
 <h1 id="spacemacs-comments">Spacemacs Comments<a class="headerlink" href="#spacemacs-comments" title="Permanent link">λ︎</a></h1>
-<p><code>M-;</code> creates a line comment on a new line or adds a comment at the end of an existing line.</p>
-<p><code>g c c</code> toggles a line commend for the current line, <code>g c</code> to toggle the selected region.</p>
+<p><span class="keys"><kbd class="key-meta">Meta</kbd></span> <span class="keys"><kbd class="key-comma">,</kbd></span> creates a line comment on a new line or adds a comment at the end of an existing line.</p>
+<p><span class="keys"><kbd>g</kbd></span> <span class="keys"><kbd>c</kbd></span> <span class="keys"><kbd>c</kbd></span> <code>g c c</code> toggles a line commend for the current line, <span class="keys"><kbd>g</kbd></span> <span class="keys"><kbd>c</kbd></span>  to toggle the selected region.</p>
 <h2 id="spacemacs-comment-key-bindings">Spacemacs comment key bindings<a class="headerlink" href="#spacemacs-comment-key-bindings" title="Permanent link">λ︎</a></h2>
 <p>Spacemacs uses the same keybindings and commands to comment any programming language or mode.  The character and style of comments is defined in each layer or package that layer includes.</p>
 <p>If a mode does not have a comment character, Spacemacs will prompt for one in the mode line.</p>
@@ -2398,12 +2352,12 @@
 </tr>
 </tbody>
 </table>
-<blockquote>
-<h4 id="infoevil-commentary-layer">Info::Evil-commentary layer<a class="headerlink" href="#infoevil-commentary-layer" title="Permanent link">λ︎</a></h4>
-<p>Spacemacs uses the <a href="https://github.com/syl20bnr/spacemacs/tree/develop/layers/%2Bvim/evil-commentary">evil-commentary layer</a> to provide a commenting tool for all other layers.</p>
-</blockquote>
+<div class="admonition info">
+<p class="admonition-title">Evil-commentary layer</p>
+<p>Spacemacs uses the <a href="https://github.com/syl20bnr/spacemacs/tree/develop/layers/%2Bvim/evil-commentary" target="_blank">evil-commentary layer</a> to provide a commenting tool for all other layers.</p>
+</div>
 <h2 id="clojure-comments">Clojure comments<a class="headerlink" href="#clojure-comments" title="Permanent link">λ︎</a></h2>
-<p><a href="https://practical.li/clojure/reference/clojure-syntax/comments.html" title="Practicalli Clojure: Comments">Clojure uses line comments, the comment function and the <code>#_</code> reader macro</a>.</p>
+<p><a href="https://practical.li/clojure/reference/clojure-syntax/comments.html" target="_blank" title="Practicalli Clojure: Comments">Clojure uses line comments, the comment function and the <code>#_</code> reader macro</a>.</p>
 <h2 id="evaluating-forms-in-rich-comments">Evaluating forms in Rich comments<a class="headerlink" href="#evaluating-forms-in-rich-comments" title="Permanent link">λ︎</a></h2>
 <p>Expressions contained within a <code>(comment ,,,)</code> form are not evaluated when a namespace is evaluated, i.e. <code>, e b</code> to evaluate the current buffer.  So its a useful form for code only evaluated directly by the developer.</p>
 <p>Setting <code>clojure-toplevel-inside-comment-form</code> to true in the Clojure layer enables expressions to be evaluated within the <code>(comment ,,,)</code> form using the usual evaluation commands, (i.e. <code>, e f</code>).</p>
@@ -2428,23 +2382,13 @@
 <p>Sections are defined using consecutive line comments characters, which can easily be generated using Evil repeat.</p>
 <p><code>42 i ; ESC</code> will create a line of 42 <code>;</code> characters.</p>
 <p>Or Emacs repeat using Control and a number to repeat the following character <code>C-42</code></p>
-<ul>
-<li><code>C-7 ;</code>  - ;;;;;;;</li>
-<li><code>C-24 ;</code> - ;;;;;;;;;;;;;;;;;;;;;;;;</li>
-<li><code>C-42 ;</code> - ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;</li>
-</ul>
-<blockquote>
-<h4 id="hintmultiple-digit-repeats">Hint::Multiple digit repeats<a class="headerlink" href="#hintmultiple-digit-repeats" title="Permanent link">λ︎</a></h4>
-<p>hold the control key and press the first number, then release both keys and press the remaining numbers followed by the character to repeat</p>
-<p>Use <code>C-g</code> if you want to cancel at any time before hitting the character to be repeated</p>
-</blockquote>
-<h2 id="classic-emacs-comments">Classic Emacs comments<a class="headerlink" href="#classic-emacs-comments" title="Permanent link">λ︎</a></h2>
+<p><span class="keys"><kbd class="key-control">Ctrl</kbd><span>+</span><kbd class="key-2">2</kbd></span> +7++ ++semi-colon++ - <code>;;;;;;;;;;;;;;;;;;;;;;;;</code></p>
 <hr/>
 <div class="md-source-file">
 <small>
     
       Last update:
-      <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">December 2, 2022</span>
+      <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">December 22, 2022</span>
 </small>
 </div>
 </article>

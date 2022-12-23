@@ -2290,28 +2290,18 @@
 <a class="md-content__button md-icon" href="https://github.com/practicalli/spacemacs/edit/main/docs/documentation/javadoc.md" title="Edit this page">
 <svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M20.71 7.04c.39-.39.39-1.04 0-1.41l-2.34-2.34c-.37-.39-1.02-.39-1.41 0l-1.84 1.83 3.75 3.75M3 17.25V21h3.75L17.81 9.93l-3.75-3.75L3 17.25Z"></path></svg>
 </a>
-<p><a class="glightbox" data-desc-position="bottom" data-height="auto" data-width="100%" href="https://raw.githubusercontent.com/practicalli/clojure-content/master/spacemacs/images/java-banner.png"><img alt="Java banner" src="https://raw.githubusercontent.com/practicalli/clojure-content/master/spacemacs/images/java-banner.png"/></a></p>
 <h1 id="javadoc-java-api-documentation">Javadoc - Java API documentation<a class="headerlink" href="#javadoc-java-api-documentation" title="Permanent link">λ︎</a></h1>
-<p><code>, h j</code> will show the javadoc information for a Java method or class, opening the relevant page on the Oracle website for Java.</p>
+<p><span class="keys"><kbd class="key-comma">,</kbd></span> <span class="keys"><kbd>h</kbd></span> <span class="keys"><kbd>j</kbd></span> shows javadoc information for a Java method or class, opening the relevant page on the Oracle website for Java.</p>
 <p><a class="glightbox" data-desc-position="bottom" data-height="auto" data-width="100%" href="/spacemacs/images/spacemacs-clojure-docs-java-docs-website.png"><img alt="Spacemacs Clojure - Java docs website" src="/spacemacs/images/spacemacs-clojure-docs-java-docs-website.png"/></a></p>
 <h2 id="include-java-sources">Include Java Sources<a class="headerlink" href="#include-java-sources" title="Permanent link">λ︎</a></h2>
 <p>Include the Java JDK sources when starting the REPL, to be able to navigate to the source definitions of Java methods.</p>
 <p>Download the Java JDK sources or install via the operating system package manager, e.g. <code>sudo apt install openjdk-17-source</code></p>
 <p>Use an alias that adds the sources as an <code>:extra-deps</code> via a <code>:local/root</code></p>
-<p>{% tabs practicalli="practicalli/clojure-deps-edn", manual="Manually add Alias" %}</p>
-<p>{% content "practicalli" %}</p>
 <p><code>:src/java17</code> alias includes the sources for Java 17 on the classpath, making them available for the Cider <code>clj-find-var</code> lookup.</p>
 <p>The alias assumes the sources are located at <code>/usr/lib/jvm/openjdk-17/lib/src.zip</code></p>
 <p><code>clojure -M:src/java17:repl/rebel</code> starts a rich terminal UI REPL including the Java sources on the class path.</p>
-<p>{% content "manual" %}</p>
-<p>Add the <code>:src/java17</code> alias to the project <code>deps.edn</code> file</p>
-<div class="highlight"><pre><span></span><code><a href="#__codelineno-0-1" id="__codelineno-0-1" name="__codelineno-0-1"></a><span class="ss">:src/java17</span><span class="w"></span>
-<a href="#__codelineno-0-2" id="__codelineno-0-2" name="__codelineno-0-2"></a><span class="p">{</span><span class="ss">:extra-deps</span><span class="w"></span>
-<a href="#__codelineno-0-3" id="__codelineno-0-3" name="__codelineno-0-3"></a><span class="w"> </span><span class="p">{</span><span class="nv">openjdk/java-sources</span><span class="w"> </span><span class="p">{</span><span class="ss">:local/root</span><span class="w"> </span><span class="s">"/usr/lib/jvm/openjdk-17/lib/src.zip"</span><span class="p">}}}</span><span class="w"></span>
-</code></pre></div>
-<p>{% endtabs %}</p>
 <h2 id="navigate-java-source-code">Navigate Java Source code<a class="headerlink" href="#navigate-java-source-code" title="Permanent link">λ︎</a></h2>
-<p><code>, g g</code> to run the command <code>clj-find-var</code> which shows</p>
+<p><span class="keys"><kbd class="key-comma">,</kbd></span> <span class="keys"><kbd>g</kbd></span> <span class="keys"><kbd>g</kbd></span> to run the command <code>clj-find-var</code> which shows</p>
 <blockquote>
 <p>Clojure LSP hijacks the <code>, g g</code> key binding, so use <code>SPC SPC clj-find-var</code> instead.</p>
 </blockquote>
@@ -2321,8 +2311,8 @@
 <h2 id="clojure-lsp-java-sources">Clojure LSP Java Sources<a class="headerlink" href="#clojure-lsp-java-sources" title="Permanent link">λ︎</a></h2>
 <p><code>:source-aliases</code> key in the Clojure LSP configuration can be used to add Java JDK sources to the Clojure LSP class path.</p>
 <p>An alias in the project <code>deps.edn</code> can be used to include the Java JDK sources</p>
-<div class="highlight"><pre><span></span><code><a href="#__codelineno-1-1" id="__codelineno-1-1" name="__codelineno-1-1"></a><span class="p">{</span><span class="ss">:source-paths</span><span class="w"> </span><span class="p">[</span><span class="s">"src"</span><span class="w"> </span><span class="s">"test"</span><span class="w"> </span><span class="s">"develop"</span><span class="p">]</span><span class="w"></span>
-<a href="#__codelineno-1-2" id="__codelineno-1-2" name="__codelineno-1-2"></a><span class="w"> </span><span class="ss">:source-aliases</span><span class="w"> </span><span class="o">#</span><span class="p">{</span><span class="s">":src/java17"</span><span class="p">}}</span><span class="w"></span>
+<div class="highlight"><pre><span></span><code><a href="#__codelineno-0-1" id="__codelineno-0-1" name="__codelineno-0-1"></a><span class="p">{</span><span class="ss">:source-paths</span><span class="w"> </span><span class="p">[</span><span class="s">"src"</span><span class="w"> </span><span class="s">"test"</span><span class="w"> </span><span class="s">"develop"</span><span class="p">]</span><span class="w"></span>
+<a href="#__codelineno-0-2" id="__codelineno-0-2" name="__codelineno-0-2"></a><span class="w"> </span><span class="ss">:source-aliases</span><span class="w"> </span><span class="o">#</span><span class="p">{</span><span class="s">":src/java17"</span><span class="p">}}</span><span class="w"></span>
 </code></pre></div>
 <blockquote>
 <p>Clojure LSP currently doesn't use the user level <code>deps.edn</code> file, so the alias must be in the project <code>deps.edn</code> file.</p>
@@ -2332,7 +2322,7 @@
 <small>
     
       Last update:
-      <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">December 2, 2022</span>
+      <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">December 22, 2022</span>
 </small>
 </div>
 </article>

@@ -2232,6 +2232,17 @@
 <div class="md-sidebar__scrollwrap">
 <div class="md-sidebar__inner">
 <nav aria-label="Table of contents" class="md-nav md-nav--secondary">
+<label class="md-nav__title" for="__toc">
+<span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+<ul class="md-nav__list" data-md-component="toc" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#lsp-documentation">
+    LSP Documentation
+  </a>
+</li>
+</ul>
 </nav>
 </div>
 </div>
@@ -2243,18 +2254,20 @@
 </a>
 <h1 id="documentation">Documentation<a class="headerlink" href="#documentation" title="Permanent link">λ︎</a></h1>
 <p>View the docstring documentation for Clojure functions (and vars) and Javadoc for Java classes and methods</p>
-<ul>
-<li><code>, h a</code> to find functions by approximate name, <code>cider-apropos</code></li>
-<li><code>, h h</code> view function signature, docstring and specification, <code>cider-doc</code></li>
-<li><code>, h j</code> open Java docs in a web browser, <code>cider-javadoc</code></li>
-</ul>
-<p><a class="glightbox" data-desc-position="bottom" data-height="auto" data-width="100%" href="/spacemacs/images/spacemacs-clojure-doc-defn.png"><img alt="Spacemacs Clojure documentation" src="/spacemacs/images/spacemacs-clojure-doc-defn.png"/></a></p>
+<p><span class="keys"><kbd class="key-comma">,</kbd></span> <span class="keys"><kbd>h</kbd></span> <span class="keys"><kbd>a</kbd></span> to find functions by approximate name, <code>cider-apropos</code></p>
+<p><span class="keys"><kbd class="key-comma">,</kbd></span> <span class="keys"><kbd>h</kbd></span> <span class="keys"><kbd>d</kbd></span> view function signature, docstring and specification, <code>cider-doc</code></p>
+<p><span class="keys"><kbd class="key-comma">,</kbd></span> <span class="keys"><kbd>h</kbd></span> <span class="keys"><kbd>j</kbd></span> open Java docs in a web browser, <code>cider-javadoc</code></p>
+<p><a class="glightbox" data-desc-position="bottom" data-height="auto" data-width="100%" href="https://raw.githubusercontent.com/practicalli/graphic-design/live/spacemacs/screenshots/spacemacs-clojure-doc-defn.png"><img alt="Spacemacs Clojure documentation" src="https://raw.githubusercontent.com/practicalli/graphic-design/live/spacemacs/screenshots/spacemacs-clojure-doc-defn.png"/></a></p>
+<h2 id="lsp-documentation">LSP Documentation<a class="headerlink" href="#lsp-documentation" title="Permanent link">λ︎</a></h2>
+<p><span class="keys"><kbd class="key-comma">,</kbd></span> <span class="keys"><kbd>h</kbd></span> <span class="keys"><kbd>l</kbd></span> to describe the thing under the cursor, showing any relevant documentation.</p>
+<p>When this is a Clojure function then examples of use from <a href="https://clojuredocs.org/">clojuredocs.org</a> are shown.</p>
+<p><a class="glightbox" data-desc-position="bottom" data-height="auto" data-width="100%" href="https://raw.githubusercontent.com/practicalli/graphic-design/live/spacemacs/screenshots/spacemacs-lsp-clojure-describe-at-point-inc.png"><img alt="LSP describe and point" src="https://raw.githubusercontent.com/practicalli/graphic-design/live/spacemacs/screenshots/spacemacs-lsp-clojure-describe-at-point-inc.png"/></a></p>
 <hr/>
 <div class="md-source-file">
 <small>
     
       Last update:
-      <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">December 2, 2022</span>
+      <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">December 22, 2022</span>
 </small>
 </div>
 </article>

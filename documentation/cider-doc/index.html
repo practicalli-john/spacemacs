@@ -771,11 +771,6 @@
     </label>
 <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix="">
 <li class="md-nav__item">
-<a class="md-nav__link" href="#hintevaluate-a-namespace-to-enable-help">
-    Hint::Evaluate a namespace to enable Help
-  </a>
-</li>
-<li class="md-nav__item">
 <a class="md-nav__link" href="#viewing-the-source-code">
     Viewing the source code
   </a>
@@ -2271,11 +2266,6 @@
     </label>
 <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix="">
 <li class="md-nav__item">
-<a class="md-nav__link" href="#hintevaluate-a-namespace-to-enable-help">
-    Hint::Evaluate a namespace to enable Help
-  </a>
-</li>
-<li class="md-nav__item">
 <a class="md-nav__link" href="#viewing-the-source-code">
     Viewing the source code
   </a>
@@ -2302,14 +2292,14 @@
 </a>
 <h1 id="cider-doc">Cider doc<a class="headerlink" href="#cider-doc" title="Permanent link">λ︎</a></h1>
 <p>View the documentation for function definitions and other vars, including links to browse the Clojure specification and source code.</p>
-<blockquote>
-<h4 id="hintevaluate-a-namespace-to-enable-help">Hint::Evaluate a namespace to enable Help<a class="headerlink" href="#hintevaluate-a-namespace-to-enable-help" title="Permanent link">λ︎</a></h4>
+<div class="admonition hint">
+<p class="admonition-title">Evaluate a namespace to enable Help</p>
 <p>Help only works for special forms (<code>def</code>, <code>if</code>, etc.) until any namespace from a project is first evaluated.</p>
-</blockquote>
-<p><code>, '</code> (<code>sesman-start</code>) to start or connect to a REPL process</p>
-<p><code>, e f</code> with the cursor on the namespace definition in the source code buffer. This loads the <code>clojure.core</code> functions and vars and the required namespaces for the current namespace.</p>
-<p>Alternatively, use <code>, e b</code> to evaluate a source code buffer if all source code in that namespace is syntactically correct.</p>
-<p><code>, h h</code> shows the documentation for the current function or var under the cursor, or prompts for a function or var name.</p>
+</div>
+<p><span class="keys"><kbd class="key-comma">,</kbd></span> <span class="keys"><kbd class="key-single-quote">'</kbd></span> (<code>sesman-start</code>) to start or connect to a REPL process</p>
+<p><span class="keys"><kbd class="key-comma">,</kbd></span> <span class="keys"><kbd>e</kbd></span> <span class="keys"><kbd>f</kbd></span> with the cursor on the namespace definition in the source code buffer. This loads the <code>clojure.core</code> functions and vars and the required namespaces for the current namespace.</p>
+<p>Or <span class="keys"><kbd class="key-comma">,</kbd></span> <span class="keys"><kbd>e</kbd></span> <span class="keys"><kbd>b</kbd></span> to evaluate a source code buffer if all source code in that namespace is syntactically correct.</p>
+<p><span class="keys"><kbd class="key-comma">,</kbd></span> <span class="keys"><kbd>h</kbd></span> <span class="keys"><kbd>d</kbd></span> shows the documentation for the current function or var under the cursor, or prompts for a function or var name.</p>
 <p><a class="glightbox" data-desc-position="bottom" data-height="auto" data-width="100%" href="/spacemacs/images/spacemacs-clojure-doc-defn.png"><img alt="Spacemacs Clojure docs - defn example" src="/spacemacs/images/spacemacs-clojure-doc-defn.png"/></a></p>
 <p>The documentation popup shows
 * the argument list of a function
@@ -2319,20 +2309,20 @@
 * Location and link to source code
 * Links to related functions</p>
 <h2 id="viewing-the-source-code">Viewing the source code<a class="headerlink" href="#viewing-the-source-code" title="Permanent link">λ︎</a></h2>
-<p><code>RET</code> on the link to the source code will open the source in a separate buffer.</p>
+<p><span class="keys"><kbd class="key-enter">Enter</kbd></span> on the link to the source code will open the source in a separate buffer.</p>
 <p><a class="glightbox" data-desc-position="bottom" data-height="auto" data-width="100%" href="/spacemacs/images/spacemacs-clojure-doc-source.png"><img alt="Spacemacs Clojure docs source code - defn example" src="/spacemacs/images/spacemacs-clojure-doc-source.png"/></a></p>
 <h2 id="viewing-the-specification">Viewing the specification<a class="headerlink" href="#viewing-the-specification" title="Permanent link">λ︎</a></h2>
-<p><code>RET</code> on the Browse Spec link will open the specification in a separate buffer.</p>
+<p><span class="keys"><kbd class="key-enter">Enter</kbd></span> on the Browse Spec link will open the specification in a separate buffer.</p>
 <p><a class="glightbox" data-desc-position="bottom" data-height="auto" data-width="100%" href="/spacemacs/images/spacemacs-clojure-doc-clojure-spec.png"><img alt="Spacemacs Clojure docs source code - defn example" src="/spacemacs/images/spacemacs-clojure-doc-clojure-spec.png"/></a></p>
 <h2 id="clojuredocs-examples">Clojuredocs examples<a class="headerlink" href="#clojuredocs-examples" title="Permanent link">λ︎</a></h2>
-<p>Clojuredocs is a website with the documentation for the Clojure Standard Library.  Each entry also contains many code examples of using each function, contributed by the Clojure community.</p>
+<p><a href="https://clojuredocs.org/" target="_blank">Clojuredocs</a> is a website with the documentation for the Clojure Standard Library.  Each entry also contains many code examples of using each function, contributed by the Clojure community.</p>
 <p><a class="glightbox" data-desc-position="bottom" data-height="auto" data-width="100%" href="/spacemacs/images/spacemacs-clojure-docs-clojuredocs.png"><img alt="Spacemacs Clojure documentation - clojuredocs example" src="/spacemacs/images/spacemacs-clojure-docs-clojuredocs.png"/></a></p>
 <hr/>
 <div class="md-source-file">
 <small>
     
       Last update:
-      <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">December 2, 2022</span>
+      <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">December 22, 2022</span>
 </small>
 </div>
 </article>
