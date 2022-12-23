@@ -10,7 +10,7 @@
 <link href="https://practical.li/spacemacs/navigating-code/find-usages/" rel="canonical"/>
 <link href="../../assets/favicon.svg" rel="icon"/>
 <meta content="mkdocs-1.4.2, mkdocs-material-8.5.10" name="generator"/>
-<title>Find Usages - Practicalli Spacemacs</title>
+<title>Find Uses - Practicalli Spacemacs</title>
 <link href="../../assets/stylesheets/main.975780f9.min.css" rel="stylesheet"/>
 <link href="../../assets/stylesheets/palette.2505c338.min.css" rel="stylesheet"/>
 <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
@@ -60,7 +60,7 @@
 <div class="md-header__topic" data-md-component="header-topic">
 <span class="md-ellipsis">
             
-              Find Usages
+              Find Uses
             
           </span>
 </div>
@@ -788,16 +788,6 @@
       </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="../../evaluating-clojure/region/">
-        Region
-      </a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="../../evaluating-clojure/pretty-print/">
-        Pretty Print
-      </a>
-</li>
-<li class="md-nav__item">
 <a class="md-nav__link" href="../../evaluating-clojure/inspect/">
         Inspect Values
       </a>
@@ -860,13 +850,13 @@
       </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="../../testing/unit-testing/clojure-test-expectations/">
-        `clojure.test` Expectations
+<a class="md-nav__link" href="../../testing/unit-testing/writing-unit-tests/">
+        Writing Unit Tests with clojure.test
       </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="../../testing/unit-testing/configure-cider-test-runner/">
-        Configure CIDER test runner
+<a class="md-nav__link" href="../../testing/unit-testing/running-tests/">
+        Running unit tests in Cider
       </a>
 </li>
 <li class="md-nav__item">
@@ -880,13 +870,8 @@
       </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="../../testing/unit-testing/running-tests/">
-        Running unit tests in Cider
-      </a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="../../testing/unit-testing/writing-unit-tests/">
-        Writing Unit Tests with clojure.test
+<a class="md-nav__link" href="../../testing/unit-testing/configure-cider-test-runner/">
+        Configure CIDER test runner
       </a>
 </li>
 </ul>
@@ -907,28 +892,48 @@
         </label>
 <ul class="md-nav__list" data-md-scrollfix="">
 <li class="md-nav__item">
-<a class="md-nav__link" href="../code-folding-methods/">
-        Code folding methods
+<a class="md-nav__link" href="../expressions/">
+        Expressions
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../markers/">
+        Markers
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../namespaces/">
+        Namespaces
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../names-symbols/">
+        Symbols
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../function-definitions/">
+        Functions
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../java-definitions/">
+        Java
       </a>
 </li>
 <li class="md-nav__item">
 <a class="md-nav__link" href="../code-folding/">
-        Code folding
-      </a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="../expressions/">
-        Navigating Expressions
+        Code Folding
       </a>
 </li>
 <li class="md-nav__item md-nav__item--active">
 <input class="md-nav__toggle md-toggle" data-md-toggle="toc" id="__toc" type="checkbox"/>
 <label class="md-nav__link md-nav__link--active" for="__toc">
-          Find Usages
+          Find Uses
           <span class="md-nav__icon md-icon"></span>
 </label>
 <a class="md-nav__link md-nav__link--active" href="./">
-        Find Usages
+        Find Uses
       </a>
 <nav aria-label="Table of contents" class="md-nav md-nav--secondary">
 <label class="md-nav__title" for="__toc">
@@ -936,11 +941,6 @@
       Table of contents
     </label>
 <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix="">
-<li class="md-nav__item">
-<a class="md-nav__link" href="#todotodopull-request-for-spacemacs-key-bindings">
-    Todo::TODO:Pull Request for Spacemacs key bindings
-  </a>
-</li>
 <li class="md-nav__item">
 <a class="md-nav__link" href="#limitations">
     Limitations
@@ -958,36 +958,6 @@
 </li>
 </ul>
 </nav>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="../function-definitions/">
-        Navigating to function definitions
-      </a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="../java-definitions/">
-        Navigating to Java Class and Method definitions
-      </a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="../local-java-sources/">
-        Local java sources
-      </a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="../markers/">
-        Navigating using markers
-      </a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="../names-symbols/">
-        Navigate names or symbols
-      </a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="../namespaces/">
-        Navigating Clojure Namespaces
-      </a>
 </li>
 </ul>
 </nav>
@@ -1007,23 +977,28 @@
         </label>
 <ul class="md-nav__list" data-md-scrollfix="">
 <li class="md-nav__item">
-<a class="md-nav__link" href="../../structural-editing/barf/">
-        Barf
-      </a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="../../structural-editing/classic-emacs/">
-        Classic Emacs structural editing
-      </a>
-</li>
-<li class="md-nav__item">
 <a class="md-nav__link" href="../../structural-editing/cleverparens/">
         Evil Cleverparens safe structural editing
       </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="../../structural-editing/emacs-killing-code-softly/">
-        Emacs killing code softly
+<a class="md-nav__link" href="../../structural-editing/smartparens/">
+        Smartparens - Writing structural text
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../structural-editing/lisp-state/">
+        Lisp State
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../structural-editing/lisp-state-wrap-unwrap/">
+        Wrap &amp; unwrap with a list
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../structural-editing/lisp-state-slurp-barf/">
+        Slurp and barf
       </a>
 </li>
 <li class="md-nav__item">
@@ -1037,43 +1012,38 @@
       </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="../../structural-editing/lisp-state-slurp-barf/">
-        Slurp and barf
-      </a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="../../structural-editing/lisp-state-splicing/">
-        Splicing
-      </a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="../../structural-editing/lisp-state-wrap-unwrap/">
-        Wrap &amp; unwrap with a list
-      </a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="../../structural-editing/lisp-state/">
-        Lisp State
-      </a>
-</li>
-<li class="md-nav__item">
 <a class="md-nav__link" href="../../structural-editing/repeating-commands/">
         Repeating Lisp State Commands
       </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="../../structural-editing/slurp/">
-        Slurp
+<a class="md-nav__link" href="../../structural-editing/barf.md">
+        None
       </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="../../structural-editing/smartparens-cheatsheet/">
-        Smartparens cheatsheet
+<a class="md-nav__link" href="../../structural-editing/classic-emacs/">
+        Classic Emacs structural editing
       </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="../../structural-editing/smartparens/">
-        Smartparens - Writing structural text
+<a class="md-nav__link" href="../../structural-editing/emacs-killing-code-softly.md">
+        None
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../structural-editing/lisp-state-splicing.md">
+        None
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../structural-editing/slurp.md">
+        None
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../structural-editing/smartparens-cheatsheet.md">
+        None
       </a>
 </li>
 </ul>
@@ -2271,11 +2241,6 @@
     </label>
 <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix="">
 <li class="md-nav__item">
-<a class="md-nav__link" href="#todotodopull-request-for-spacemacs-key-bindings">
-    Todo::TODO:Pull Request for Spacemacs key bindings
-  </a>
-</li>
-<li class="md-nav__item">
 <a class="md-nav__link" href="#limitations">
     Limitations
   </a>
@@ -2305,18 +2270,18 @@
 <p><code>cider-xref-fn-refs</code> - find use of a function under the cursor, showing results in a new buffer</p>
 <p><code>cider-xref-fn-refs-select</code> - show the usages of the function at point in the mini-buffer</p>
 <p><code>cider-xref-fn-deps</code> and <code>cider-xref-fn-deps-select</code> to navigate to the functions used by some function</p>
-<p><a class="glightbox" data-desc-position="bottom" data-height="auto" data-width="100%" href="https://metaredux.com/assets/spacemacs/images/cider_find_usages.gif"><img alt="CIDER find usages" src="https://metaredux.com/assets/spacemacs/images/cider_find_usages.gif"/></a></p>
-<blockquote>
-<h4 id="todotodopull-request-for-spacemacs-key-bindings">Todo::TODO:Pull Request for Spacemacs key bindings<a class="headerlink" href="#todotodopull-request-for-spacemacs-key-bindings" title="Permanent link">λ︎</a></h4>
+<p><a class="glightbox" data-desc-position="bottom" data-height="auto" data-width="100%" href="https://docs.cider.mx/cider/_images/cider_find_usages.gif"><img alt="CIDER find usages" src="https://docs.cider.mx/cider/_images/cider_find_usages.gif"/></a></p>
+<div class="admonition todo">
+<p class="admonition-title">Pull Request for Spacemacs key bindings</p>
 <p>A Pull request should be created to add key binding to Spacemacs to launch these commands.</p>
-</blockquote>
+</div>
 <h2 id="limitations">Limitations<a class="headerlink" href="#limitations" title="Permanent link">λ︎</a></h2>
 <p>Find usages only works for Clojure will show only data for evaluated namespaces.</p>
 <p>Only information that a function is used is provided, there is no information as to the precise location.</p>
 <p>Lambda functions do not currently work with find usages.</p>
 <h2 id="alternative-approaches">Alternative approaches<a class="headerlink" href="#alternative-approaches" title="Permanent link">λ︎</a></h2>
-<p><code>, r f u</code> find usages with clj-refactor.el</p>
-<p><code>SPC / pattern</code> will show all matches to the <code>pattern</code> in a project.  <code>C-c C-e</code> will open those results in a separate buffer and any edits will be applied to the original files.</p>
+<p><span class="keys"><kbd class="key-comma">,</kbd></span> <span class="keys"><kbd>r</kbd></span> <span class="keys"><kbd>f</kbd></span> <span class="keys"><kbd>u</kbd></span> find usages with clj-refactor.el</p>
+<p><span class="keys"><kbd class="key-space">Space</kbd></span> <span class="keys"><kbd class="key-slash">/</kbd></span> <code>pattern</code> will show all matches to the <code>pattern</code> in a project.  <span class="keys"><kbd class="key-control">Ctrl</kbd><span>+</span><kbd>c</kbd></span> <span class="keys"><kbd class="key-control">Ctrl</kbd><span>+</span><kbd>e</kbd></span> will open those results in a separate buffer and any edits will be applied to the original files.</p>
 <h2 id="references">References<a class="headerlink" href="#references" title="Permanent link">λ︎</a></h2>
 <ul>
 <li><a href="https://metaredux.com/posts/2019/05/04/discovering-runtime-function-references-in-clojure.html">Discovering Runtime Function References in Clojure</a></li>
@@ -2327,7 +2292,7 @@
 <small>
     
       Last update:
-      <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">December 2, 2022</span>
+      <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">December 23, 2022</span>
 </small>
 </div>
 </article>
@@ -2341,7 +2306,7 @@
 </main>
 <footer class="md-footer">
 <nav aria-label="Footer" class="md-footer__inner md-grid">
-<a aria-label="Previous: Navigating Expressions" class="md-footer__link md-footer__link--prev" href="../expressions/" rel="prev">
+<a aria-label="Previous: Code Folding" class="md-footer__link md-footer__link--prev" href="../code-folding/" rel="prev">
 <div class="md-footer__button md-icon">
 <svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"></path></svg>
 </div>
@@ -2350,17 +2315,17 @@
 <span class="md-footer__direction">
                 Previous
               </span>
-              Navigating Expressions
+              Code Folding
             </div>
 </div>
 </a>
-<a aria-label="Next: Navigating to function definitions" class="md-footer__link md-footer__link--next" href="../function-definitions/" rel="next">
+<a aria-label="Next: Structural Editing" class="md-footer__link md-footer__link--next" href="../../structural-editing/" rel="next">
 <div class="md-footer__title">
 <div class="md-ellipsis">
 <span class="md-footer__direction">
                 Next
               </span>
-              Navigating to function definitions
+              Structural Editing
             </div>
 </div>
 <div class="md-footer__button md-icon">

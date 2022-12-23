@@ -10,7 +10,7 @@
 <link href="https://practical.li/spacemacs/navigating-code/code-folding/" rel="canonical"/>
 <link href="../../assets/favicon.svg" rel="icon"/>
 <meta content="mkdocs-1.4.2, mkdocs-material-8.5.10" name="generator"/>
-<title>Code folding - Practicalli Spacemacs</title>
+<title>Code Folding - Practicalli Spacemacs</title>
 <link href="../../assets/stylesheets/main.975780f9.min.css" rel="stylesheet"/>
 <link href="../../assets/stylesheets/palette.2505c338.min.css" rel="stylesheet"/>
 <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
@@ -60,7 +60,7 @@
 <div class="md-header__topic" data-md-component="header-topic">
 <span class="md-ellipsis">
             
-              Code folding
+              Code Folding
             
           </span>
 </div>
@@ -788,16 +788,6 @@
       </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="../../evaluating-clojure/region/">
-        Region
-      </a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="../../evaluating-clojure/pretty-print/">
-        Pretty Print
-      </a>
-</li>
-<li class="md-nav__item">
 <a class="md-nav__link" href="../../evaluating-clojure/inspect/">
         Inspect Values
       </a>
@@ -860,13 +850,13 @@
       </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="../../testing/unit-testing/clojure-test-expectations/">
-        `clojure.test` Expectations
+<a class="md-nav__link" href="../../testing/unit-testing/writing-unit-tests/">
+        Writing Unit Tests with clojure.test
       </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="../../testing/unit-testing/configure-cider-test-runner/">
-        Configure CIDER test runner
+<a class="md-nav__link" href="../../testing/unit-testing/running-tests/">
+        Running unit tests in Cider
       </a>
 </li>
 <li class="md-nav__item">
@@ -880,13 +870,8 @@
       </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="../../testing/unit-testing/running-tests/">
-        Running unit tests in Cider
-      </a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="../../testing/unit-testing/writing-unit-tests/">
-        Writing Unit Tests with clojure.test
+<a class="md-nav__link" href="../../testing/unit-testing/configure-cider-test-runner/">
+        Configure CIDER test runner
       </a>
 </li>
 </ul>
@@ -907,18 +892,43 @@
         </label>
 <ul class="md-nav__list" data-md-scrollfix="">
 <li class="md-nav__item">
-<a class="md-nav__link" href="../code-folding-methods/">
-        Code folding methods
+<a class="md-nav__link" href="../expressions/">
+        Expressions
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../markers/">
+        Markers
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../namespaces/">
+        Namespaces
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../names-symbols/">
+        Symbols
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../function-definitions/">
+        Functions
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../java-definitions/">
+        Java
       </a>
 </li>
 <li class="md-nav__item md-nav__item--active">
 <input class="md-nav__toggle md-toggle" data-md-toggle="toc" id="__toc" type="checkbox"/>
 <label class="md-nav__link md-nav__link--active" for="__toc">
-          Code folding
+          Code Folding
           <span class="md-nav__icon md-icon"></span>
 </label>
 <a class="md-nav__link md-nav__link--active" href="./">
-        Code folding
+        Code Folding
       </a>
 <nav aria-label="Table of contents" class="md-nav md-nav--secondary">
 <label class="md-nav__title" for="__toc">
@@ -926,11 +936,6 @@
       Table of contents
     </label>
 <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix="">
-<li class="md-nav__item">
-<a class="md-nav__link" href="#hintoverview-of-a-namespace">
-    Hint::Overview of a namespace
-  </a>
-</li>
 <li class="md-nav__item">
 <a class="md-nav__link" href="#keybindings">
     Keybindings
@@ -945,43 +950,8 @@
 </nav>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="../expressions/">
-        Navigating Expressions
-      </a>
-</li>
-<li class="md-nav__item">
 <a class="md-nav__link" href="../find-usages/">
-        Find Usages
-      </a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="../function-definitions/">
-        Navigating to function definitions
-      </a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="../java-definitions/">
-        Navigating to Java Class and Method definitions
-      </a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="../local-java-sources/">
-        Local java sources
-      </a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="../markers/">
-        Navigating using markers
-      </a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="../names-symbols/">
-        Navigate names or symbols
-      </a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="../namespaces/">
-        Navigating Clojure Namespaces
+        Find Uses
       </a>
 </li>
 </ul>
@@ -1002,23 +972,28 @@
         </label>
 <ul class="md-nav__list" data-md-scrollfix="">
 <li class="md-nav__item">
-<a class="md-nav__link" href="../../structural-editing/barf/">
-        Barf
-      </a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="../../structural-editing/classic-emacs/">
-        Classic Emacs structural editing
-      </a>
-</li>
-<li class="md-nav__item">
 <a class="md-nav__link" href="../../structural-editing/cleverparens/">
         Evil Cleverparens safe structural editing
       </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="../../structural-editing/emacs-killing-code-softly/">
-        Emacs killing code softly
+<a class="md-nav__link" href="../../structural-editing/smartparens/">
+        Smartparens - Writing structural text
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../structural-editing/lisp-state/">
+        Lisp State
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../structural-editing/lisp-state-wrap-unwrap/">
+        Wrap &amp; unwrap with a list
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../structural-editing/lisp-state-slurp-barf/">
+        Slurp and barf
       </a>
 </li>
 <li class="md-nav__item">
@@ -1032,43 +1007,38 @@
       </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="../../structural-editing/lisp-state-slurp-barf/">
-        Slurp and barf
-      </a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="../../structural-editing/lisp-state-splicing/">
-        Splicing
-      </a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="../../structural-editing/lisp-state-wrap-unwrap/">
-        Wrap &amp; unwrap with a list
-      </a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="../../structural-editing/lisp-state/">
-        Lisp State
-      </a>
-</li>
-<li class="md-nav__item">
 <a class="md-nav__link" href="../../structural-editing/repeating-commands/">
         Repeating Lisp State Commands
       </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="../../structural-editing/slurp/">
-        Slurp
+<a class="md-nav__link" href="../../structural-editing/barf.md">
+        None
       </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="../../structural-editing/smartparens-cheatsheet/">
-        Smartparens cheatsheet
+<a class="md-nav__link" href="../../structural-editing/classic-emacs/">
+        Classic Emacs structural editing
       </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="../../structural-editing/smartparens/">
-        Smartparens - Writing structural text
+<a class="md-nav__link" href="../../structural-editing/emacs-killing-code-softly.md">
+        None
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../structural-editing/lisp-state-splicing.md">
+        None
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../structural-editing/slurp.md">
+        None
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../structural-editing/smartparens-cheatsheet.md">
+        None
       </a>
 </li>
 </ul>
@@ -2266,11 +2236,6 @@
     </label>
 <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix="">
 <li class="md-nav__item">
-<a class="md-nav__link" href="#hintoverview-of-a-namespace">
-    Hint::Overview of a namespace
-  </a>
-</li>
-<li class="md-nav__item">
 <a class="md-nav__link" href="#keybindings">
     Keybindings
   </a>
@@ -2292,10 +2257,10 @@
 </a>
 <h1 id="code-folding">Code folding<a class="headerlink" href="#code-folding" title="Permanent link">λ︎</a></h1>
 <p>Code folding allows you to collapse a code block onto one line, allowing you to see more of your code in the window.  A code block for Clojure includes comments, <code>def</code>, <code>defn</code> and the threading macros <code>-&gt;</code> and <code>--&gt;</code>.</p>
-<blockquote>
-<h4 id="hintoverview-of-a-namespace">Hint::Overview of a namespace<a class="headerlink" href="#hintoverview-of-a-namespace" title="Permanent link">λ︎</a></h4>
-<p><code>z m</code> shows just the names of all function definitions and vars in a namespace, providing a quick way to review all namespace api.</p>
-</blockquote>
+<div class="admonition hint">
+<p class="admonition-title">Overview of a namespace</p>
+<p><span class="keys"><kbd>z</kbd></span> <span class="keys"><kbd>m</kbd></span> shows just the names of all function definitions and vars in a namespace, providing a quick way to review all namespace api.</p>
+</div>
 <h2 id="keybindings">Keybindings<a class="headerlink" href="#keybindings" title="Permanent link">λ︎</a></h2>
 <table>
 <thead>
@@ -2306,40 +2271,49 @@
 </thead>
 <tbody>
 <tr>
-<td><code>z a</code></td>
+<td><span class="keys"><kbd>z</kbd></span> <span class="keys"><kbd>a</kbd></span></td>
 <td>Toggle fold for current code block</td>
 </tr>
 <tr>
-<td><code>z c</code></td>
+<td><span class="keys"><kbd>z</kbd></span> <span class="keys"><kbd>c</kbd></span></td>
 <td>Folds a code block</td>
 </tr>
 <tr>
-<td><code>z m</code></td>
+<td><span class="keys"><kbd>z</kbd></span> <span class="keys"><kbd>m</kbd></span></td>
 <td>Folds all code  in buffer</td>
 </tr>
 <tr>
-<td><code>z o</code></td>
+<td><span class="keys"><kbd>z</kbd></span> <span class="keys"><kbd>o</kbd></span></td>
 <td>Opens current folded code block</td>
 </tr>
 <tr>
-<td><code>z O</code></td>
+<td><span class="keys"><kbd>z</kbd></span> <span class="keys"><kbd class="key-o">O</kbd></span></td>
 <td>Opens current folded code block recursively</td>
 </tr>
 <tr>
-<td><code>z r</code></td>
+<td><span class="keys"><kbd>z</kbd></span> <span class="keys"><kbd>r</kbd></span></td>
 <td>Opens all folded code blocks in the buffer</td>
 </tr>
 </tbody>
 </table>
 <h2 id="code-fold-transient-state">Code Fold Transient State<a class="headerlink" href="#code-fold-transient-state" title="Permanent link">λ︎</a></h2>
-<p>You can use a transient state for folding code via <code>SPC z .</code>, which seems to be most useful when reviewing code.</p>
-<p><a class="glightbox" data-desc-position="bottom" data-height="auto" data-width="100%" href="/spacemacs/images/spacemacs-zoom-fold-transient-state.png"><img alt="Spacemacs - Zoom - Code Fold transient state" src="/spacemacs/images/spacemacs-zoom-fold-transient-state.png"/></a></p>
+<p><span class="keys"><kbd class="key-space">Space</kbd></span> <span class="keys"><kbd>z</kbd></span> opens a transient state for folding code, most useful when reviewing code.</p>
+<p><a class="glightbox" data-desc-position="bottom" data-height="auto" data-width="100%" href="/images/spacemacs-zoom-fold-transient-state.png"><img alt="Spacemacs - Zoom - Code Fold transient state" src="/images/spacemacs-zoom-fold-transient-state.png"/></a></p>
+<h1 id="code-folding-methods">Code folding methods<a class="headerlink" href="#code-folding-methods" title="Permanent link">λ︎</a></h1>
+<p>There are two code folding methods, evil folding (the default) and <a href="https://github.com/gregsexton/origami.el" target="_blank">origami</a>.  Evil fold is recommended for Clojure development.</p>
+<p>Origami adds a recursive open and close and what it calls an org-mode header collapse (didn't seem to work on Clojure code). Origami seems less useful for Clojure than evil-fold, as folding seems to only work at the top level.</p>
+<p>Origami allows you to <a href="https://github.com/gregsexton/origami.el#does-it-support-my-favourite-major-mode" target="_blank">write your own parser</a> to teach different ways to fold code.  Origami is a great choice if you want to customise your code folding.</p>
+<h2 id="switching-to-origami-code-folding">Switching to origami code folding<a class="headerlink" href="#switching-to-origami-code-folding" title="Permanent link">λ︎</a></h2>
+<p><span class="keys"><kbd class="key-space">Space</kbd></span> <span class="keys"><kbd>f</kbd></span> <span class="keys"><kbd>e</kbd></span> <span class="keys"><kbd>d</kbd></span> to open the Spacemacs configuration file</p>
+<p><span class="keys"><kbd class="key-space">Space</kbd></span> <span class="keys"><kbd>s</kbd></span> <span class="keys"><kbd>s</kbd></span> <code>dotspacemacs-folding-method</code> to find the code folding setting, <span class="keys"><kbd class="key-enter">Enter</kbd></span> to end the search.</p>
+<p>Change the code folding method: <code>dotspacemacs-folding-method 'origami</code></p>
+<p><span class="keys"><kbd class="key-space">Space</kbd></span> <span class="keys"><kbd>q</kbd></span> <span class="keys"><kbd>r</kbd></span> to restarting Emacs and download the origami package.</p>
 <hr/>
 <div class="md-source-file">
 <small>
     
       Last update:
-      <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">December 2, 2022</span>
+      <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">December 23, 2022</span>
 </small>
 </div>
 </article>
@@ -2353,7 +2327,7 @@
 </main>
 <footer class="md-footer">
 <nav aria-label="Footer" class="md-footer__inner md-grid">
-<a aria-label="Previous: Code folding methods" class="md-footer__link md-footer__link--prev" href="../code-folding-methods/" rel="prev">
+<a aria-label="Previous: Java" class="md-footer__link md-footer__link--prev" href="../java-definitions/" rel="prev">
 <div class="md-footer__button md-icon">
 <svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"></path></svg>
 </div>
@@ -2362,17 +2336,17 @@
 <span class="md-footer__direction">
                 Previous
               </span>
-              Code folding methods
+              Java
             </div>
 </div>
 </a>
-<a aria-label="Next: Navigating Expressions" class="md-footer__link md-footer__link--next" href="../expressions/" rel="next">
+<a aria-label="Next: Find Uses" class="md-footer__link md-footer__link--next" href="../find-usages/" rel="next">
 <div class="md-footer__title">
 <div class="md-ellipsis">
 <span class="md-footer__direction">
                 Next
               </span>
-              Navigating Expressions
+              Find Uses
             </div>
 </div>
 <div class="md-footer__button md-icon">

@@ -10,7 +10,7 @@
 <link href="https://practical.li/spacemacs/navigating-code/namespaces/" rel="canonical"/>
 <link href="../../assets/favicon.svg" rel="icon"/>
 <meta content="mkdocs-1.4.2, mkdocs-material-8.5.10" name="generator"/>
-<title>Navigating Clojure Namespaces - Practicalli Spacemacs</title>
+<title>Namespaces - Practicalli Spacemacs</title>
 <link href="../../assets/stylesheets/main.975780f9.min.css" rel="stylesheet"/>
 <link href="../../assets/stylesheets/palette.2505c338.min.css" rel="stylesheet"/>
 <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
@@ -60,7 +60,7 @@
 <div class="md-header__topic" data-md-component="header-topic">
 <span class="md-ellipsis">
             
-              Navigating Clojure Namespaces
+              Namespaces
             
           </span>
 </div>
@@ -788,16 +788,6 @@
       </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="../../evaluating-clojure/region/">
-        Region
-      </a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="../../evaluating-clojure/pretty-print/">
-        Pretty Print
-      </a>
-</li>
-<li class="md-nav__item">
 <a class="md-nav__link" href="../../evaluating-clojure/inspect/">
         Inspect Values
       </a>
@@ -860,13 +850,13 @@
       </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="../../testing/unit-testing/clojure-test-expectations/">
-        `clojure.test` Expectations
+<a class="md-nav__link" href="../../testing/unit-testing/writing-unit-tests/">
+        Writing Unit Tests with clojure.test
       </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="../../testing/unit-testing/configure-cider-test-runner/">
-        Configure CIDER test runner
+<a class="md-nav__link" href="../../testing/unit-testing/running-tests/">
+        Running unit tests in Cider
       </a>
 </li>
 <li class="md-nav__item">
@@ -880,13 +870,8 @@
       </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="../../testing/unit-testing/running-tests/">
-        Running unit tests in Cider
-      </a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="../../testing/unit-testing/writing-unit-tests/">
-        Writing Unit Tests with clojure.test
+<a class="md-nav__link" href="../../testing/unit-testing/configure-cider-test-runner/">
+        Configure CIDER test runner
       </a>
 </li>
 </ul>
@@ -907,58 +892,23 @@
         </label>
 <ul class="md-nav__list" data-md-scrollfix="">
 <li class="md-nav__item">
-<a class="md-nav__link" href="../code-folding-methods/">
-        Code folding methods
-      </a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="../code-folding/">
-        Code folding
-      </a>
-</li>
-<li class="md-nav__item">
 <a class="md-nav__link" href="../expressions/">
-        Navigating Expressions
-      </a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="../find-usages/">
-        Find Usages
-      </a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="../function-definitions/">
-        Navigating to function definitions
-      </a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="../java-definitions/">
-        Navigating to Java Class and Method definitions
-      </a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="../local-java-sources/">
-        Local java sources
+        Expressions
       </a>
 </li>
 <li class="md-nav__item">
 <a class="md-nav__link" href="../markers/">
-        Navigating using markers
-      </a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="../names-symbols/">
-        Navigate names or symbols
+        Markers
       </a>
 </li>
 <li class="md-nav__item md-nav__item--active">
 <input class="md-nav__toggle md-toggle" data-md-toggle="toc" id="__toc" type="checkbox"/>
 <label class="md-nav__link md-nav__link--active" for="__toc">
-          Navigating Clojure Namespaces
+          Namespaces
           <span class="md-nav__icon md-icon"></span>
 </label>
 <a class="md-nav__link md-nav__link--active" href="./">
-        Navigating Clojure Namespaces
+        Namespaces
       </a>
 <nav aria-label="Table of contents" class="md-nav md-nav--secondary">
 <label class="md-nav__title" for="__toc">
@@ -998,6 +948,31 @@
 </ul>
 </nav>
 </li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../names-symbols/">
+        Symbols
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../function-definitions/">
+        Functions
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../java-definitions/">
+        Java
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../code-folding/">
+        Code Folding
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../find-usages/">
+        Find Uses
+      </a>
+</li>
 </ul>
 </nav>
 </li>
@@ -1016,23 +991,28 @@
         </label>
 <ul class="md-nav__list" data-md-scrollfix="">
 <li class="md-nav__item">
-<a class="md-nav__link" href="../../structural-editing/barf/">
-        Barf
-      </a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="../../structural-editing/classic-emacs/">
-        Classic Emacs structural editing
-      </a>
-</li>
-<li class="md-nav__item">
 <a class="md-nav__link" href="../../structural-editing/cleverparens/">
         Evil Cleverparens safe structural editing
       </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="../../structural-editing/emacs-killing-code-softly/">
-        Emacs killing code softly
+<a class="md-nav__link" href="../../structural-editing/smartparens/">
+        Smartparens - Writing structural text
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../structural-editing/lisp-state/">
+        Lisp State
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../structural-editing/lisp-state-wrap-unwrap/">
+        Wrap &amp; unwrap with a list
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../structural-editing/lisp-state-slurp-barf/">
+        Slurp and barf
       </a>
 </li>
 <li class="md-nav__item">
@@ -1046,43 +1026,38 @@
       </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="../../structural-editing/lisp-state-slurp-barf/">
-        Slurp and barf
-      </a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="../../structural-editing/lisp-state-splicing/">
-        Splicing
-      </a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="../../structural-editing/lisp-state-wrap-unwrap/">
-        Wrap &amp; unwrap with a list
-      </a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="../../structural-editing/lisp-state/">
-        Lisp State
-      </a>
-</li>
-<li class="md-nav__item">
 <a class="md-nav__link" href="../../structural-editing/repeating-commands/">
         Repeating Lisp State Commands
       </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="../../structural-editing/slurp/">
-        Slurp
+<a class="md-nav__link" href="../../structural-editing/barf.md">
+        None
       </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="../../structural-editing/smartparens-cheatsheet/">
-        Smartparens cheatsheet
+<a class="md-nav__link" href="../../structural-editing/classic-emacs/">
+        Classic Emacs structural editing
       </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="../../structural-editing/smartparens/">
-        Smartparens - Writing structural text
+<a class="md-nav__link" href="../../structural-editing/emacs-killing-code-softly.md">
+        None
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../structural-editing/lisp-state-splicing.md">
+        None
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../structural-editing/slurp.md">
+        None
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../structural-editing/smartparens-cheatsheet.md">
+        None
       </a>
 </li>
 </ul>
@@ -2334,7 +2309,7 @@
 <h2 id="browse-namespace-symbol-documentation">Browse namespace symbol documentation<a class="headerlink" href="#browse-namespace-symbol-documentation" title="Permanent link">λ︎</a></h2>
 <p>Browse namespace symbols by navigating through the definitions in a namespace (<code>def</code>, <code>defn</code>) and view their documentation (doc strings).</p>
 <p><code>, h n</code> (<code>cider-browse-ns</code>) lists all namespaces loaded into the REPL in the current project.  Namespaces in the project that have not been evaluated, directly or via a require, will not be in the list.</p>
-<p><a class="glightbox" data-desc-position="bottom" data-height="auto" data-width="100%" href="/spacemacs/images/spacemacs-clojure-namespace-browse-ns.png"><img alt="Clojure - Namespaces - browse-ns" src="/spacemacs/images/spacemacs-clojure-namespace-browse-ns.png"/></a></p>
+<p><a class="glightbox" data-desc-position="bottom" data-height="auto" data-width="100%" href="/images/spacemacs-clojure-namespace-browse-ns.png"><img alt="Clojure - Namespaces - browse-ns" src="/images/spacemacs-clojure-namespace-browse-ns.png"/></a></p>
 <p><code>RET</code> to show the symbols in the namespace</p>
 <p><code>RET</code> on a namespace symbol to see the documention in a pop-up wondow.  Use the link to the source code file in the documentation to open the namespace in the buffer.</p>
 <h2 id="repl-buffer-cider-commands">REPL buffer cider commands<a class="headerlink" href="#repl-buffer-cider-commands" title="Permanent link">λ︎</a></h2>
@@ -2357,16 +2332,16 @@
 </tr>
 </tbody>
 </table>
-<p><a class="glightbox" data-desc-position="bottom" data-height="auto" data-width="100%" href="/spacemacs/images/spacemacs-clojure-repl-command-ns.png"><img alt="Clojure REPL commands - namespace" src="/spacemacs/images/spacemacs-clojure-repl-command-ns.png"/></a></p>
+<p><a class="glightbox" data-desc-position="bottom" data-height="auto" data-width="100%" href="/images/spacemacs-clojure-repl-command-ns.png"><img alt="Clojure REPL commands - namespace" src="/images/spacemacs-clojure-repl-command-ns.png"/></a></p>
 <h3 id="using-code-to-change-the-namespace">Using code to change the namespace<a class="headerlink" href="#using-code-to-change-the-namespace" title="Permanent link">λ︎</a></h3>
 <p><a href="https://clojuredocs.org/clojure.core/in-ns"><code>in-ns</code></a> function will set the namespace for the REPL.  If that namespace does not exist, then the namespace is created in the current REPL.</p>
-<p><a class="glightbox" data-desc-position="bottom" data-height="auto" data-width="100%" href="/spacemacs/images/spacemacs-clojure-repl-change-namespace-spacemacs-workshop.png"><img alt="Clojure REPL - change namespace" src="/spacemacs/images/spacemacs-clojure-repl-change-namespace-spacemacs-workshop.png"/></a></p>
+<p><a class="glightbox" data-desc-position="bottom" data-height="auto" data-width="100%" href="/images/spacemacs-clojure-repl-change-namespace-spacemacs-workshop.png"><img alt="Clojure REPL - change namespace" src="/images/spacemacs-clojure-repl-change-namespace-spacemacs-workshop.png"/></a></p>
 <hr/>
 <div class="md-source-file">
 <small>
     
       Last update:
-      <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">December 2, 2022</span>
+      <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">December 23, 2022</span>
 </small>
 </div>
 </article>
@@ -2380,7 +2355,7 @@
 </main>
 <footer class="md-footer">
 <nav aria-label="Footer" class="md-footer__inner md-grid">
-<a aria-label="Previous: Navigate names or symbols" class="md-footer__link md-footer__link--prev" href="../names-symbols/" rel="prev">
+<a aria-label="Previous: Markers" class="md-footer__link md-footer__link--prev" href="../markers/" rel="prev">
 <div class="md-footer__button md-icon">
 <svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"></path></svg>
 </div>
@@ -2389,17 +2364,17 @@
 <span class="md-footer__direction">
                 Previous
               </span>
-              Navigate names or symbols
+              Markers
             </div>
 </div>
 </a>
-<a aria-label="Next: Structural Editing" class="md-footer__link md-footer__link--next" href="../../structural-editing/" rel="next">
+<a aria-label="Next: Symbols" class="md-footer__link md-footer__link--next" href="../names-symbols/" rel="next">
 <div class="md-footer__title">
 <div class="md-ellipsis">
 <span class="md-footer__direction">
                 Next
               </span>
-              Structural Editing
+              Symbols
             </div>
 </div>
 <div class="md-footer__button md-icon">
