@@ -10,7 +10,7 @@
 <link href="https://practical.li/spacemacs/source-control/forge-configuration/" rel="canonical"/>
 <link href="../../assets/favicon.svg" rel="icon"/>
 <meta content="mkdocs-1.4.2, mkdocs-material-8.5.10" name="generator"/>
-<title>Magit Forge - Practicalli Spacemacs</title>
+<title>Forge Config - Practicalli Spacemacs</title>
 <link href="../../assets/stylesheets/main.975780f9.min.css" rel="stylesheet"/>
 <link href="../../assets/stylesheets/palette.2505c338.min.css" rel="stylesheet"/>
 <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
@@ -60,7 +60,7 @@
 <div class="md-header__topic" data-md-component="header-topic">
 <span class="md-ellipsis">
             
-              Magit Forge
+              Forge Config
             
           </span>
 </div>
@@ -1249,22 +1249,22 @@
 <ul class="md-nav__list" data-md-scrollfix="">
 <li class="md-nav__item">
 <a class="md-nav__link" href="../configure-layers/">
-        Configure Source control layers
+        Git Layer
       </a>
 </li>
 <li class="md-nav__item">
 <a class="md-nav__link" href="../git-configuration/">
-        Git Configuration
+        Git Config
       </a>
 </li>
 <li class="md-nav__item md-nav__item--active">
 <input class="md-nav__toggle md-toggle" data-md-toggle="toc" id="__toc" type="checkbox"/>
 <label class="md-nav__link md-nav__link--active" for="__toc">
-          Magit Forge
+          Forge Config
           <span class="md-nav__icon md-icon"></span>
 </label>
 <a class="md-nav__link md-nav__link--active" href="./">
-        Magit Forge
+        Forge Config
       </a>
 <nav aria-label="Table of contents" class="md-nav md-nav--secondary">
 <label class="md-nav__title" for="__toc">
@@ -1310,123 +1310,36 @@
     Configure the number of open and closed topics shown in forge
   </a>
 </li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#hosted-environments">
+    Hosted environments
+  </a>
+</li>
 </ul>
 </nav>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="../forge-self-hosted-configuration/">
-        Configure Magit Forge for hosted environments
+<a class="md-nav__link" href="../github-clone/">
+        GitHub Clone
       </a>
 </li>
 <li class="md-nav__item md-nav__item--nested">
 <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_7_6" id="__nav_7_6" type="checkbox"/>
 <div class="md-nav__link md-nav__link--index">
-<a href="../github/">GitHub</a>
+<a href="../magit/">Magit Git Client</a>
 <label for="__nav_7_6">
 <span class="md-nav__icon md-icon"></span>
 </label>
 </div>
-<nav aria-label="GitHub" class="md-nav" data-md-level="2">
-<label class="md-nav__title" for="__nav_7_6">
-<span class="md-nav__icon md-icon"></span>
-          GitHub
-        </label>
-<ul class="md-nav__list" data-md-scrollfix="">
-<li class="md-nav__item">
-<a class="md-nav__link" href="../github-clone/">
-        GitHub access for github-clone
-      </a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="../github/gists/">
-        GitHub Gists
-      </a>
-</li>
-</ul>
-</nav>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="../gitlab/">
-        GitLab
-      </a>
-</li>
-<li class="md-nav__item md-nav__item--nested">
-<input class="md-nav__toggle md-toggle" data-md-toggle="__nav_7_8" id="__nav_7_8" type="checkbox"/>
-<div class="md-nav__link md-nav__link--index">
-<a href="../magit/">Magit Git Client</a>
-<label for="__nav_7_8">
-<span class="md-nav__icon md-icon"></span>
-</label>
-</div>
 <nav aria-label="Magit Git Client" class="md-nav" data-md-level="2">
-<label class="md-nav__title" for="__nav_7_8">
+<label class="md-nav__title" for="__nav_7_6">
 <span class="md-nav__icon md-icon"></span>
           Magit Git Client
         </label>
 <ul class="md-nav__list" data-md-scrollfix="">
 <li class="md-nav__item">
-<a class="md-nav__link" href="../magit/blame/">
-        Reviewing Commits with Git Blame
-      </a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="../magit/branching/">
-        Branching in Magit
-      </a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="../magit/changing-history/">
-        Changing commit History
-      </a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="../magit/cherry-picking/">
-        Cherry Picking commits
-      </a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="../magit/clean-up-magit-sessions/">
-        Cleaning up Magit sessions
-      </a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="../magit/commit-amend/">
-        Amend a commit
-      </a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="../magit/commit-changes/">
-        Committing changes
-      </a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="../magit/commit-create/">
-        Create a commit
-      </a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="../magit/commit-extend/">
-        Extend a commit
-      </a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="../magit/commit-rewrite/">
-        Reword a commit
-      </a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="../magit/commit-squash/">
-        Squash Commits
-      </a>
-</li>
-<li class="md-nav__item">
 <a class="md-nav__link" href="../magit/create-local-repository/">
         Create a local Git repository
-      </a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="../magit/interactive-rebasing/">
-        Interactive Rebasing
       </a>
 </li>
 <li class="md-nav__item">
@@ -1435,8 +1348,13 @@
       </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="../magit/reset-commit-history/">
-        Reset Commit History
+<a class="md-nav__link" href="../magit/status/">
+        Magit Status
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../magit/branching/">
+        Branching in Magit
       </a>
 </li>
 <li class="md-nav__item">
@@ -1450,13 +1368,8 @@
       </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="../magit/status-fullscreen/">
-        Magit Status Fullscreen
-      </a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="../magit/status/">
-        Magit Status
+<a class="md-nav__link" href="../magit/commit-changes/">
+        Committing changes
       </a>
 </li>
 <li class="md-nav__item">
@@ -1470,40 +1383,54 @@
       </a>
 </li>
 <li class="md-nav__item">
+<a class="md-nav__link" href="../magit/reset-commit-history/">
+        Reset Commit History
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../magit/interactive-rebasing/">
+        Interactive Rebasing
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../magit/cherry-picking/">
+        Cherry Picking commits
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../magit/blame/">
+        Reviewing Commits with Git Blame
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../magit/changing-history/">
+        Changing commit History
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../magit/clean-up-magit-sessions/">
+        Cleaning up Magit sessions
+      </a>
+</li>
+<li class="md-nav__item">
 <a class="md-nav__link" href="../magit/version-highlighting/">
         Highlight Version Control Changes
       </a>
 </li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="../magit/forge/">
-        Magit Forge - issues, PRs and forking
-      </a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="../magit/forge/add-database/">
-        Add remote repositories to Magit Forge
-      </a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="../magit/forge/forks/">
-        Create a remote fork
-      </a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="../magit/forge/issues/">
-        Forge Issue management
-      </a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="../magit/forge/pull-requests/">
-        Forge Pull Requests
-      </a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="../magit/remote-repositories/">
-        Working with Remote Repositories
-      </a>
-</li>
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" data-md-toggle="__nav_7_6_18" id="__nav_7_6_18" type="checkbox"/>
+<div class="md-nav__link md-nav__link--index">
+<a href="../magit/remote-repositories/">Remote Repository</a>
+<label for="__nav_7_6_18">
+<span class="md-nav__icon md-icon"></span>
+</label>
+</div>
+<nav aria-label="Remote Repository" class="md-nav" data-md-level="3">
+<label class="md-nav__title" for="__nav_7_6_18">
+<span class="md-nav__icon md-icon"></span>
+          Remote Repository
+        </label>
+<ul class="md-nav__list" data-md-scrollfix="">
 <li class="md-nav__item">
 <a class="md-nav__link" href="../magit/remote-repositories/add-remote/">
         Add remote repository to local repository
@@ -1543,6 +1470,46 @@
 <a class="md-nav__link" href="../magit/remote-repositories/try-pull-requests/">
         Try Pull Requests with Magit
       </a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" data-md-toggle="__nav_7_6_19" id="__nav_7_6_19" type="checkbox"/>
+<div class="md-nav__link md-nav__link--index">
+<a href="../magit/forge/">Forge</a>
+<label for="__nav_7_6_19">
+<span class="md-nav__icon md-icon"></span>
+</label>
+</div>
+<nav aria-label="Forge" class="md-nav" data-md-level="3">
+<label class="md-nav__title" for="__nav_7_6_19">
+<span class="md-nav__icon md-icon"></span>
+          Forge
+        </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../magit/forge/add-database/">
+        Add remote repositories to Magit Forge
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../magit/forge/forks/">
+        Create a remote fork
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../magit/forge/issues/">
+        Forge Issue management
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../magit/forge/pull-requests/">
+        Forge Pull Requests
+      </a>
+</li>
+</ul>
+</nav>
 </li>
 </ul>
 </nav>
@@ -1942,11 +1909,6 @@
         MacOSX Specific configuration
       </a>
 </li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="../../clojurescript/css-rainbow-colors.md">
-        None
-      </a>
-</li>
 </ul>
 </nav>
 </li>
@@ -2126,6 +2088,11 @@
     Configure the number of open and closed topics shown in forge
   </a>
 </li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#hosted-environments">
+    Hosted environments
+  </a>
+</li>
 </ul>
 </nav>
 </div>
@@ -2161,18 +2128,18 @@
 <p>GitHub are introducing fine-grained developer tokens, although they are not supported for accessing the <a href="https://docs.github.com/en/graphql/guides/forming-calls-with-graphql" target="_blank">GitHub GraphQL API</a> which Forge uses for Issues and Pull Requests.  Create a so-called classic developer token.</p>
 </div>
 <h3 id="encrypted-forge-connection-in-authinfogpg">Encrypted forge connection in .authinfo.gpg<a class="headerlink" href="#encrypted-forge-connection-in-authinfogpg" title="Permanent link">λ︎</a></h3>
-<p><code>SPC f f</code> to open a file called <code>~/.authinfo</code>.  If the file does not exist it will be created when saving the file.</p>
+<p><span class="keys"><kbd class="key-space">Space</kbd></span> <span class="keys"><kbd>f</kbd></span> <span class="keys"><kbd>f</kbd></span> and open a file called <code>~/.authinfo</code>.  If the file does not exist it will be created when saving the file.</p>
 <p>Add the Auth Source line to the file, using your GitHub or GitLab name and associated personal access token. For example, the GitHub account name is practicalli and the personal access token is the password (this is not a real token or account, do not share your token publicly)</p>
 <div class="highlight"><pre><span></span><code><a href="#__codelineno-1-1" id="__codelineno-1-1" name="__codelineno-1-1"></a>machine api.github.com login practicalli^forge password 01personal02access03token
 </code></pre></div>
-<p><code>SPC a Y e</code> to call <code>epa-encrypt-file</code></p>
+<p><span class="keys"><kbd class="key-space">Space</kbd></span> <span class="keys"><kbd>a</kbd></span> <span class="keys"><kbd class="key-y">Y</kbd></span> <span class="keys"><kbd>e</kbd></span> to call <code>epa-encrypt-file</code></p>
 <p><a class="glightbox" data-desc-position="bottom" data-height="auto" data-width="100%" href="https://raw.githubusercontent.com/practicalli/graphic-design/live/spacemacs/screenshots/spacemacs-encryption-eazypg-encript-file-authinfo.png"><img alt="Spacemacs Encryption - eazypg encrypt file - authinfo" src="https://raw.githubusercontent.com/practicalli/graphic-design/live/spacemacs/screenshots/spacemacs-encryption-eazypg-encript-file-authinfo.png"/></a></p>
 <p>Select recipients for encryption prompt, so select a PGP key to encrypt the file with.</p>
-<p><code>j</code> and <code>k</code> to navigate to line with existing PGP key</p>
-<p><code>m</code> to toggle mark the key to use (should show a star next to the key)</p>
-<p><code>RET</code> with cursor over the <code>[ok]</code> text menu in the pop-up</p>
+<p><span class="keys"><kbd>j</kbd></span> and <span class="keys"><kbd>k</kbd></span> to navigate to line with existing PGP key</p>
+<p><span class="keys"><kbd>m</kbd></span> to toggle mark the key to use (should show a star next to the key)</p>
+<p><span class="keys"><kbd class="key-enter">Enter</kbd></span> with cursor over the <code>[ok]</code> text menu in the pop-up</p>
 <p>A new encrypted file is created using the original name with <code>.gpg</code> postfixed to the end, creating the  <code>~/.authinfo.gpg</code> file.</p>
-<p><code>SPC f f</code> and open <code>~/.authinfo.gpg</code> to check Emacs can decrypt the file.  A plain text version of the file will open and a message appears in the mini-buffer saying the file is being decrypted.</p>
+<p><span class="keys"><kbd class="key-space">Space</kbd></span> <span class="keys"><kbd>f</kbd></span> <span class="keys"><kbd>f</kbd></span> and open <code>~/.authinfo.gpg</code> to check Emacs can decrypt the file.  A plain text version of the file will open and a message appears in the mini-buffer saying the file is being decrypted.</p>
 <p>Finally, delete the <code>~/.authinfo</code> file, so the token is no longer stored as plain text.</p>
 <div class="admonition info">
 <p class="admonition-title">Without a PGP key</p>
@@ -2217,12 +2184,23 @@
 <li><a href="https://github.com/practicalli/spacemacs.d" target="_blank">practicalli/spacemacs.d</a> configuration contains the forge list limit settings.</li>
 </ol>
 <p>The first number is the open items to be displayed, the second number is the closed items to display.  <code>0</code> means no items will be displayed.</p>
+<h2 id="hosted-environments">Hosted environments<a class="headerlink" href="#hosted-environments" title="Permanent link">λ︎</a></h2>
+<p>For GitHub enterprise or GitLab self-hosted service, <a href="https://magit.vc/manual/ghub/Setting-the-Username.html#Setting-the-Username" target="_blank">specify the user and API</a> that Forge should use to connect for the hosted service service</p>
+<p>For example, if the API is available at <a href="https://practical.li/api/v3">https://practical.li/api/v3</a></p>
+<p>Set the username for the specific service in the <code>~/.gitconfig</code> file:</p>
+<div class="highlight"><pre><span></span><code><a href="#__codelineno-8-1" id="__codelineno-8-1" name="__codelineno-8-1"></a>git config --global github.example.com/api/v3.user EMPLOYEE
+</code></pre></div>
+<p>Add the API location to the local configuration of every repository that will use that service</p>
+<p><div class="highlight"><pre><span></span><code><a href="#__codelineno-9-1" id="__codelineno-9-1" name="__codelineno-9-1"></a><span class="nb">cd</span> /path/to/repo
+<a href="#__codelineno-9-2" id="__codelineno-9-2" name="__codelineno-9-2"></a>git config github.host example.com/api/v3
+</code></pre></div>
+* <a href="https://mrdias.com/2018/04/01/using-magit-with-github-enterprise.html" target="_blank">Using magit GitHub Enterprise</a> - Jorge Dias</p>
 <hr/>
 <div class="md-source-file">
 <small>
     
       Last update:
-      <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">December 2, 2022</span>
+      <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">December 26, 2022</span>
 </small>
 </div>
 </article>
@@ -2236,7 +2214,7 @@
 </main>
 <footer class="md-footer">
 <nav aria-label="Footer" class="md-footer__inner md-grid">
-<a aria-label="Previous: Git Configuration" class="md-footer__link md-footer__link--prev" href="../git-configuration/" rel="prev">
+<a aria-label="Previous: Git Config" class="md-footer__link md-footer__link--prev" href="../git-configuration/" rel="prev">
 <div class="md-footer__button md-icon">
 <svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"></path></svg>
 </div>
@@ -2245,17 +2223,17 @@
 <span class="md-footer__direction">
                 Previous
               </span>
-              Git Configuration
+              Git Config
             </div>
 </div>
 </a>
-<a aria-label="Next: Configure Magit Forge for hosted environments" class="md-footer__link md-footer__link--next" href="../forge-self-hosted-configuration/" rel="next">
+<a aria-label="Next: GitHub Clone" class="md-footer__link md-footer__link--next" href="../github-clone/" rel="next">
 <div class="md-footer__title">
 <div class="md-ellipsis">
 <span class="md-footer__direction">
                 Next
               </span>
-              Configure Magit Forge for hosted environments
+              GitHub Clone
             </div>
 </div>
 <div class="md-footer__button md-icon">

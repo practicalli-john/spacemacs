@@ -1249,133 +1249,41 @@
 <ul class="md-nav__list" data-md-scrollfix="">
 <li class="md-nav__item">
 <a class="md-nav__link" href="../../../configure-layers/">
-        Configure Source control layers
+        Git Layer
       </a>
 </li>
 <li class="md-nav__item">
 <a class="md-nav__link" href="../../../git-configuration/">
-        Git Configuration
+        Git Config
       </a>
 </li>
 <li class="md-nav__item">
 <a class="md-nav__link" href="../../../forge-configuration/">
-        Magit Forge
+        Forge Config
       </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="../../../forge-self-hosted-configuration/">
-        Configure Magit Forge for hosted environments
+<a class="md-nav__link" href="../../../github-clone/">
+        GitHub Clone
       </a>
 </li>
-<li class="md-nav__item md-nav__item--nested">
-<input class="md-nav__toggle md-toggle" data-md-toggle="__nav_7_6" id="__nav_7_6" type="checkbox"/>
+<li class="md-nav__item md-nav__item--active md-nav__item--nested">
+<input checked="" class="md-nav__toggle md-toggle" data-md-toggle="__nav_7_6" id="__nav_7_6" type="checkbox"/>
 <div class="md-nav__link md-nav__link--index">
-<a href="../../../github/">GitHub</a>
+<a href="../../">Magit Git Client</a>
 <label for="__nav_7_6">
 <span class="md-nav__icon md-icon"></span>
 </label>
 </div>
-<nav aria-label="GitHub" class="md-nav" data-md-level="2">
-<label class="md-nav__title" for="__nav_7_6">
-<span class="md-nav__icon md-icon"></span>
-          GitHub
-        </label>
-<ul class="md-nav__list" data-md-scrollfix="">
-<li class="md-nav__item">
-<a class="md-nav__link" href="../../../github-clone/">
-        GitHub access for github-clone
-      </a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="../../../github/gists/">
-        GitHub Gists
-      </a>
-</li>
-</ul>
-</nav>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="../../../gitlab/">
-        GitLab
-      </a>
-</li>
-<li class="md-nav__item md-nav__item--active md-nav__item--nested">
-<input checked="" class="md-nav__toggle md-toggle" data-md-toggle="__nav_7_8" id="__nav_7_8" type="checkbox"/>
-<div class="md-nav__link md-nav__link--index">
-<a href="../../">Magit Git Client</a>
-<label for="__nav_7_8">
-<span class="md-nav__icon md-icon"></span>
-</label>
-</div>
 <nav aria-label="Magit Git Client" class="md-nav" data-md-level="2">
-<label class="md-nav__title" for="__nav_7_8">
+<label class="md-nav__title" for="__nav_7_6">
 <span class="md-nav__icon md-icon"></span>
           Magit Git Client
         </label>
 <ul class="md-nav__list" data-md-scrollfix="">
 <li class="md-nav__item">
-<a class="md-nav__link" href="../../blame/">
-        Reviewing Commits with Git Blame
-      </a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="../../branching/">
-        Branching in Magit
-      </a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="../../changing-history/">
-        Changing commit History
-      </a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="../../cherry-picking/">
-        Cherry Picking commits
-      </a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="../../clean-up-magit-sessions/">
-        Cleaning up Magit sessions
-      </a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="../../commit-amend/">
-        Amend a commit
-      </a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="../../commit-changes/">
-        Committing changes
-      </a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="../../commit-create/">
-        Create a commit
-      </a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="../../commit-extend/">
-        Extend a commit
-      </a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="../../commit-rewrite/">
-        Reword a commit
-      </a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="../../commit-squash/">
-        Squash Commits
-      </a>
-</li>
-<li class="md-nav__item">
 <a class="md-nav__link" href="../../create-local-repository/">
         Create a local Git repository
-      </a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="../../interactive-rebasing/">
-        Interactive Rebasing
       </a>
 </li>
 <li class="md-nav__item">
@@ -1384,8 +1292,13 @@
       </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="../../reset-commit-history/">
-        Reset Commit History
+<a class="md-nav__link" href="../../status/">
+        Magit Status
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../branching/">
+        Branching in Magit
       </a>
 </li>
 <li class="md-nav__item">
@@ -1399,13 +1312,8 @@
       </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="../../status-fullscreen/">
-        Magit Status Fullscreen
-      </a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="../../status/">
-        Magit Status
+<a class="md-nav__link" href="../../commit-changes/">
+        Committing changes
       </a>
 </li>
 <li class="md-nav__item">
@@ -1419,40 +1327,54 @@
       </a>
 </li>
 <li class="md-nav__item">
+<a class="md-nav__link" href="../../reset-commit-history/">
+        Reset Commit History
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../interactive-rebasing/">
+        Interactive Rebasing
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../cherry-picking/">
+        Cherry Picking commits
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../blame/">
+        Reviewing Commits with Git Blame
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../changing-history/">
+        Changing commit History
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../clean-up-magit-sessions/">
+        Cleaning up Magit sessions
+      </a>
+</li>
+<li class="md-nav__item">
 <a class="md-nav__link" href="../../version-highlighting/">
         Highlight Version Control Changes
       </a>
 </li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="../../forge/">
-        Magit Forge - issues, PRs and forking
-      </a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="../../forge/add-database/">
-        Add remote repositories to Magit Forge
-      </a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="../../forge/forks/">
-        Create a remote fork
-      </a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="../../forge/issues/">
-        Forge Issue management
-      </a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="../../forge/pull-requests/">
-        Forge Pull Requests
-      </a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="../">
-        Working with Remote Repositories
-      </a>
-</li>
+<li class="md-nav__item md-nav__item--active md-nav__item--nested">
+<input checked="" class="md-nav__toggle md-toggle" data-md-toggle="__nav_7_6_18" id="__nav_7_6_18" type="checkbox"/>
+<div class="md-nav__link md-nav__link--index">
+<a href="../">Remote Repository</a>
+<label for="__nav_7_6_18">
+<span class="md-nav__icon md-icon"></span>
+</label>
+</div>
+<nav aria-label="Remote Repository" class="md-nav" data-md-level="3">
+<label class="md-nav__title" for="__nav_7_6_18">
+<span class="md-nav__icon md-icon"></span>
+          Remote Repository
+        </label>
+<ul class="md-nav__list" data-md-scrollfix="">
 <li class="md-nav__item">
 <a class="md-nav__link" href="../add-remote/">
         Add remote repository to local repository
@@ -1510,6 +1432,46 @@
 <a class="md-nav__link" href="../try-pull-requests/">
         Try Pull Requests with Magit
       </a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" data-md-toggle="__nav_7_6_19" id="__nav_7_6_19" type="checkbox"/>
+<div class="md-nav__link md-nav__link--index">
+<a href="../../forge/">Forge</a>
+<label for="__nav_7_6_19">
+<span class="md-nav__icon md-icon"></span>
+</label>
+</div>
+<nav aria-label="Forge" class="md-nav" data-md-level="3">
+<label class="md-nav__title" for="__nav_7_6_19">
+<span class="md-nav__icon md-icon"></span>
+          Forge
+        </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../forge/add-database/">
+        Add remote repositories to Magit Forge
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../forge/forks/">
+        Create a remote fork
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../forge/issues/">
+        Forge Issue management
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../forge/pull-requests/">
+        Forge Pull Requests
+      </a>
+</li>
+</ul>
+</nav>
 </li>
 </ul>
 </nav>
@@ -1907,11 +1869,6 @@
 <li class="md-nav__item">
 <a class="md-nav__link" href="../../../../os-specific-config/macosx/">
         MacOSX Specific configuration
-      </a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="../../../../clojurescript/css-rainbow-colors.md">
-        None
       </a>
 </li>
 </ul>

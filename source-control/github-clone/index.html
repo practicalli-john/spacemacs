@@ -10,7 +10,7 @@
 <link href="https://practical.li/spacemacs/source-control/github-clone/" rel="canonical"/>
 <link href="../../assets/favicon.svg" rel="icon"/>
 <meta content="mkdocs-1.4.2, mkdocs-material-8.5.10" name="generator"/>
-<title>GitHub access for github-clone - Practicalli Spacemacs</title>
+<title>GitHub Clone - Practicalli Spacemacs</title>
 <link href="../../assets/stylesheets/main.975780f9.min.css" rel="stylesheet"/>
 <link href="../../assets/stylesheets/palette.2505c338.min.css" rel="stylesheet"/>
 <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
@@ -60,7 +60,7 @@
 <div class="md-header__topic" data-md-component="header-topic">
 <span class="md-ellipsis">
             
-              GitHub access for github-clone
+              GitHub Clone
             
           </span>
 </div>
@@ -1249,46 +1249,27 @@
 <ul class="md-nav__list" data-md-scrollfix="">
 <li class="md-nav__item">
 <a class="md-nav__link" href="../configure-layers/">
-        Configure Source control layers
+        Git Layer
       </a>
 </li>
 <li class="md-nav__item">
 <a class="md-nav__link" href="../git-configuration/">
-        Git Configuration
+        Git Config
       </a>
 </li>
 <li class="md-nav__item">
 <a class="md-nav__link" href="../forge-configuration/">
-        Magit Forge
+        Forge Config
       </a>
 </li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="../forge-self-hosted-configuration/">
-        Configure Magit Forge for hosted environments
-      </a>
-</li>
-<li class="md-nav__item md-nav__item--active md-nav__item--nested">
-<input checked="" class="md-nav__toggle md-toggle" data-md-toggle="__nav_7_6" id="__nav_7_6" type="checkbox"/>
-<div class="md-nav__link md-nav__link--index">
-<a href="../github/">GitHub</a>
-<label for="__nav_7_6">
-<span class="md-nav__icon md-icon"></span>
-</label>
-</div>
-<nav aria-label="GitHub" class="md-nav" data-md-level="2">
-<label class="md-nav__title" for="__nav_7_6">
-<span class="md-nav__icon md-icon"></span>
-          GitHub
-        </label>
-<ul class="md-nav__list" data-md-scrollfix="">
 <li class="md-nav__item md-nav__item--active">
 <input class="md-nav__toggle md-toggle" data-md-toggle="toc" id="__toc" type="checkbox"/>
 <label class="md-nav__link md-nav__link--active" for="__toc">
-          GitHub access for github-clone
+          GitHub Clone
           <span class="md-nav__icon md-icon"></span>
 </label>
 <a class="md-nav__link md-nav__link--active" href="./">
-        GitHub access for github-clone
+        GitHub Clone
       </a>
 <nav aria-label="Table of contents" class="md-nav md-nav--secondary">
 <label class="md-nav__title" for="__toc">
@@ -1297,13 +1278,13 @@
     </label>
 <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix="">
 <li class="md-nav__item">
-<a class="md-nav__link" href="#warningpotential-security-risk">
-    WARNING::Potential security risk
+<a class="md-nav__link" href="#github-cli">
+    GitHub CLI
   </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="#configure-github-clone">
-    Configure github-clone
+<a class="md-nav__link" href="#configure-developer-token">
+    Configure developer token
   </a>
 </li>
 <li class="md-nav__item">
@@ -1314,96 +1295,23 @@
 </ul>
 </nav>
 </li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="../github/gists/">
-        GitHub Gists
-      </a>
-</li>
-</ul>
-</nav>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="../gitlab/">
-        GitLab
-      </a>
-</li>
 <li class="md-nav__item md-nav__item--nested">
-<input class="md-nav__toggle md-toggle" data-md-toggle="__nav_7_8" id="__nav_7_8" type="checkbox"/>
+<input class="md-nav__toggle md-toggle" data-md-toggle="__nav_7_6" id="__nav_7_6" type="checkbox"/>
 <div class="md-nav__link md-nav__link--index">
 <a href="../magit/">Magit Git Client</a>
-<label for="__nav_7_8">
+<label for="__nav_7_6">
 <span class="md-nav__icon md-icon"></span>
 </label>
 </div>
 <nav aria-label="Magit Git Client" class="md-nav" data-md-level="2">
-<label class="md-nav__title" for="__nav_7_8">
+<label class="md-nav__title" for="__nav_7_6">
 <span class="md-nav__icon md-icon"></span>
           Magit Git Client
         </label>
 <ul class="md-nav__list" data-md-scrollfix="">
 <li class="md-nav__item">
-<a class="md-nav__link" href="../magit/blame/">
-        Reviewing Commits with Git Blame
-      </a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="../magit/branching/">
-        Branching in Magit
-      </a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="../magit/changing-history/">
-        Changing commit History
-      </a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="../magit/cherry-picking/">
-        Cherry Picking commits
-      </a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="../magit/clean-up-magit-sessions/">
-        Cleaning up Magit sessions
-      </a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="../magit/commit-amend/">
-        Amend a commit
-      </a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="../magit/commit-changes/">
-        Committing changes
-      </a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="../magit/commit-create/">
-        Create a commit
-      </a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="../magit/commit-extend/">
-        Extend a commit
-      </a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="../magit/commit-rewrite/">
-        Reword a commit
-      </a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="../magit/commit-squash/">
-        Squash Commits
-      </a>
-</li>
-<li class="md-nav__item">
 <a class="md-nav__link" href="../magit/create-local-repository/">
         Create a local Git repository
-      </a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="../magit/interactive-rebasing/">
-        Interactive Rebasing
       </a>
 </li>
 <li class="md-nav__item">
@@ -1412,8 +1320,13 @@
       </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="../magit/reset-commit-history/">
-        Reset Commit History
+<a class="md-nav__link" href="../magit/status/">
+        Magit Status
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../magit/branching/">
+        Branching in Magit
       </a>
 </li>
 <li class="md-nav__item">
@@ -1427,13 +1340,8 @@
       </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="../magit/status-fullscreen/">
-        Magit Status Fullscreen
-      </a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="../magit/status/">
-        Magit Status
+<a class="md-nav__link" href="../magit/commit-changes/">
+        Committing changes
       </a>
 </li>
 <li class="md-nav__item">
@@ -1447,40 +1355,54 @@
       </a>
 </li>
 <li class="md-nav__item">
+<a class="md-nav__link" href="../magit/reset-commit-history/">
+        Reset Commit History
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../magit/interactive-rebasing/">
+        Interactive Rebasing
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../magit/cherry-picking/">
+        Cherry Picking commits
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../magit/blame/">
+        Reviewing Commits with Git Blame
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../magit/changing-history/">
+        Changing commit History
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../magit/clean-up-magit-sessions/">
+        Cleaning up Magit sessions
+      </a>
+</li>
+<li class="md-nav__item">
 <a class="md-nav__link" href="../magit/version-highlighting/">
         Highlight Version Control Changes
       </a>
 </li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="../magit/forge/">
-        Magit Forge - issues, PRs and forking
-      </a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="../magit/forge/add-database/">
-        Add remote repositories to Magit Forge
-      </a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="../magit/forge/forks/">
-        Create a remote fork
-      </a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="../magit/forge/issues/">
-        Forge Issue management
-      </a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="../magit/forge/pull-requests/">
-        Forge Pull Requests
-      </a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="../magit/remote-repositories/">
-        Working with Remote Repositories
-      </a>
-</li>
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" data-md-toggle="__nav_7_6_18" id="__nav_7_6_18" type="checkbox"/>
+<div class="md-nav__link md-nav__link--index">
+<a href="../magit/remote-repositories/">Remote Repository</a>
+<label for="__nav_7_6_18">
+<span class="md-nav__icon md-icon"></span>
+</label>
+</div>
+<nav aria-label="Remote Repository" class="md-nav" data-md-level="3">
+<label class="md-nav__title" for="__nav_7_6_18">
+<span class="md-nav__icon md-icon"></span>
+          Remote Repository
+        </label>
+<ul class="md-nav__list" data-md-scrollfix="">
 <li class="md-nav__item">
 <a class="md-nav__link" href="../magit/remote-repositories/add-remote/">
         Add remote repository to local repository
@@ -1520,6 +1442,46 @@
 <a class="md-nav__link" href="../magit/remote-repositories/try-pull-requests/">
         Try Pull Requests with Magit
       </a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" data-md-toggle="__nav_7_6_19" id="__nav_7_6_19" type="checkbox"/>
+<div class="md-nav__link md-nav__link--index">
+<a href="../magit/forge/">Forge</a>
+<label for="__nav_7_6_19">
+<span class="md-nav__icon md-icon"></span>
+</label>
+</div>
+<nav aria-label="Forge" class="md-nav" data-md-level="3">
+<label class="md-nav__title" for="__nav_7_6_19">
+<span class="md-nav__icon md-icon"></span>
+          Forge
+        </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../magit/forge/add-database/">
+        Add remote repositories to Magit Forge
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../magit/forge/forks/">
+        Create a remote fork
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../magit/forge/issues/">
+        Forge Issue management
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../magit/forge/pull-requests/">
+        Forge Pull Requests
+      </a>
+</li>
+</ul>
+</nav>
 </li>
 </ul>
 </nav>
@@ -1919,11 +1881,6 @@
         MacOSX Specific configuration
       </a>
 </li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="../../clojurescript/css-rainbow-colors.md">
-        None
-      </a>
-</li>
 </ul>
 </nav>
 </li>
@@ -2066,13 +2023,13 @@
     </label>
 <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix="">
 <li class="md-nav__item">
-<a class="md-nav__link" href="#warningpotential-security-risk">
-    WARNING::Potential security risk
+<a class="md-nav__link" href="#github-cli">
+    GitHub CLI
   </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="#configure-github-clone">
-    Configure github-clone
+<a class="md-nav__link" href="#configure-developer-token">
+    Configure developer token
   </a>
 </li>
 <li class="md-nav__item">
@@ -2091,31 +2048,42 @@
 <svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M20.71 7.04c.39-.39.39-1.04 0-1.41l-2.34-2.34c-.37-.39-1.02-.39-1.41 0l-1.84 1.83 3.75 3.75M3 17.25V21h3.75L17.81 9.93l-3.75-3.75L3 17.25Z"></path></svg>
 </a>
 <h1 id="github-access-for-github-clone">GitHub access for github-clone<a class="headerlink" href="#github-access-for-github-clone" title="Permanent link">λ︎</a></h1>
-<p>The github-clone package in the Spacemacs GitHub layer requires a <a href="https://help.github.com/en/articles/creating-a-personal-access-token-for-the-command-line">personal access token</a> in <code>~/.gitconfig</code> to access GitHub.  As <code>~/.gitconfig</code> is plain text, adding a token is a potential security risk.</p>
+<p><span class="keys"><kbd class="key-space">Space</kbd></span> <span class="keys"><kbd>g</kbd></span> <span class="keys"><kbd>c</kbd></span> can clone a remote repository from GitHub / GitLab.</p>
+<p>Using an SSH URL and an SSH key, then no further configuration is required.</p>
+<p>Using an HTTPS URL required the configuration of a developer token.</p>
+<div class="admonition hint">
+<p class="admonition-title">Use Magit as a GitHub Client</p>
 <p>Magit and Magit Forge provides the majority of github-clojure features, except for searching GitHub for a repository.  Magit Forge can <a href="../forge-configuration/">use an <code>.authinfo.gpg</code> which provides a high degree of security</a>.</p>
-<blockquote>
-<h4 id="warningpotential-security-risk">WARNING::Potential security risk<a class="headerlink" href="#warningpotential-security-risk" title="Permanent link">λ︎</a></h4>
-<p>The github-clone.el package (via gh.el package) requires a personal token to be added to the ~.gitconfig file, which if committed to a shared repository would provide others a way to access your repositories</p>
+</div>
+<h2 id="github-cli">GitHub CLI<a class="headerlink" href="#github-cli" title="Permanent link">λ︎</a></h2>
+<p><a href="https://cli.github.com/" target="_blank">GitHub CLI</a> will generate a developer token each time the <a href="https://cli.github.com/manual/gh_auth_login" target="_blank">auth login command</a> is issued</p>
+<div class="highlight"><pre><span></span><code><a href="#__codelineno-0-1" id="__codelineno-0-1" name="__codelineno-0-1"></a>git auth login
+</code></pre></div>
+<h2 id="configure-developer-token">Configure developer token<a class="headerlink" href="#configure-developer-token" title="Permanent link">λ︎</a></h2>
+<details class="warning">
+<summary>Developer tokens should have limited life-span</summary>
+<p>Saving a developer token to the file space, especially in a file that could be included in version control and pushed to a remote server is a security issue.</p>
+<p>Using GitHub CLI can minimise the risk by recycling the tokens.  Or create tokens with a very short life-span via the GitHub / GitLab website.</p>
+<p>The github-clone package in the Spacemacs GitHub layer requires a <a href="https://help.github.com/en/articles/creating-a-personal-access-token-for-the-command-line">personal access token</a> in <code>~/.gitconfig</code> to access GitHub.  As <code>~/.gitconfig</code> is plain text, adding a token is a potential security risk.</p>
 <p>If an access token is shared, it should be immediately deleted from your GitHub account. Personal access tokens do not provide access to a users GitHub account, so are less of a risk than using a password.</p>
-</blockquote>
-<h2 id="configure-github-clone">Configure github-clone<a class="headerlink" href="#configure-github-clone" title="Permanent link">λ︎</a></h2>
+</details>
 <p>Add your GitHub account name to the Git configuration</p>
-<div class="highlight"><pre><span></span><code><a href="#__codelineno-0-1" id="__codelineno-0-1" name="__codelineno-0-1"></a>git config --global github.user practicalli
+<div class="highlight"><pre><span></span><code><a href="#__codelineno-1-1" id="__codelineno-1-1" name="__codelineno-1-1"></a>git config --global github.user practicalli
 </code></pre></div>
 <p>Add the personal access token to Git configuration (using your own token)</p>
-<div class="highlight"><pre><span></span><code><a href="#__codelineno-1-1" id="__codelineno-1-1" name="__codelineno-1-1"></a>git config --global github.oauth-token 5aa705bda08803e0ed59c39e0a4101c0fea0ec3b
+<div class="highlight"><pre><span></span><code><a href="#__codelineno-2-1" id="__codelineno-2-1" name="__codelineno-2-1"></a>git config --global github.oauth-token 5aa705bda08803e0ed59c39e0a4101c0fea0ec3b
 </code></pre></div>
 <p>The <code>~/.gitconfig</code> file will be updated and should look similar to this example</p>
 <p><a class="glightbox" data-desc-position="bottom" data-height="auto" data-width="100%" href="/images/git-gitconfig-user-name-email-github-oauth-token.png"><img alt="Git configuration - user name and email with GitHub user name and oauth token" src="/images/git-gitconfig-user-name-email-github-oauth-token.png"/></a></p>
 <h2 id="move-configuration-to-a-github-private-file">Move configuration to a .github-private file<a class="headerlink" href="#move-configuration-to-a-github-private-file" title="Permanent link">λ︎</a></h2>
 <p>To help mistakenly committing the token to a shared repository, move the <code>[github]</code> section from <code>.gitconfig</code> to a file called <code>.gitconfig-private</code></p>
-<div class="highlight"><pre><span></span><code><a href="#__codelineno-2-1" id="__codelineno-2-1" name="__codelineno-2-1"></a>  <span class="o">[</span>github<span class="o">]</span>
-<a href="#__codelineno-2-2" id="__codelineno-2-2" name="__codelineno-2-2"></a>    <span class="nv">user</span> <span class="o">=</span> &lt;your-github-username&gt;
-<a href="#__codelineno-2-3" id="__codelineno-2-3" name="__codelineno-2-3"></a>    oauth-token <span class="o">=</span> &lt;01personal02access03token&gt;
+<div class="highlight"><pre><span></span><code><a href="#__codelineno-3-1" id="__codelineno-3-1" name="__codelineno-3-1"></a>  <span class="o">[</span>github<span class="o">]</span>
+<a href="#__codelineno-3-2" id="__codelineno-3-2" name="__codelineno-3-2"></a>    <span class="nv">user</span> <span class="o">=</span> &lt;your-github-username&gt;
+<a href="#__codelineno-3-3" id="__codelineno-3-3" name="__codelineno-3-3"></a>    oauth-token <span class="o">=</span> &lt;01personal02access03token&gt;
 </code></pre></div>
 <p>Add an <code>[include]</code> section in the <code>.gitconfig</code> fot to include the details from the <code>.gitconfig-private</code></p>
-<div class="highlight"><pre><span></span><code><a href="#__codelineno-3-1" id="__codelineno-3-1" name="__codelineno-3-1"></a>  <span class="o">[</span>include<span class="o">]</span>
-<a href="#__codelineno-3-2" id="__codelineno-3-2" name="__codelineno-3-2"></a>    <span class="nv">path</span> <span class="o">=</span> ~/.gitconfig-private
+<div class="highlight"><pre><span></span><code><a href="#__codelineno-4-1" id="__codelineno-4-1" name="__codelineno-4-1"></a>  <span class="o">[</span>include<span class="o">]</span>
+<a href="#__codelineno-4-2" id="__codelineno-4-2" name="__codelineno-4-2"></a>    <span class="nv">path</span> <span class="o">=</span> ~/.gitconfig-private
 </code></pre></div>
 <p>The <code>.gitconfig</code> file can then safely be committed to a shared Git repository without exposing the access token.</p>
 <hr/>
@@ -2123,7 +2091,7 @@
 <small>
     
       Last update:
-      <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">December 2, 2022</span>
+      <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">December 26, 2022</span>
 </small>
 </div>
 </article>
@@ -2137,7 +2105,7 @@
 </main>
 <footer class="md-footer">
 <nav aria-label="Footer" class="md-footer__inner md-grid">
-<a aria-label="Previous: Github" class="md-footer__link md-footer__link--prev" href="../github/" rel="prev">
+<a aria-label="Previous: Forge Config" class="md-footer__link md-footer__link--prev" href="../forge-configuration/" rel="prev">
 <div class="md-footer__button md-icon">
 <svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"></path></svg>
 </div>
@@ -2146,17 +2114,17 @@
 <span class="md-footer__direction">
                 Previous
               </span>
-              Github
+              Forge Config
             </div>
 </div>
 </a>
-<a aria-label="Next: GitHub Gists" class="md-footer__link md-footer__link--next" href="../github/gists/" rel="next">
+<a aria-label="Next: MaGit - Version Control" class="md-footer__link md-footer__link--next" href="../magit/" rel="next">
 <div class="md-footer__title">
 <div class="md-ellipsis">
 <span class="md-footer__direction">
                 Next
               </span>
-              GitHub Gists
+              MaGit - Version Control
             </div>
 </div>
 <div class="md-footer__button md-icon">

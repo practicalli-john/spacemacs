@@ -1249,73 +1249,51 @@
 <ul class="md-nav__list" data-md-scrollfix="">
 <li class="md-nav__item">
 <a class="md-nav__link" href="../../configure-layers/">
-        Configure Source control layers
+        Git Layer
       </a>
 </li>
 <li class="md-nav__item">
 <a class="md-nav__link" href="../../git-configuration/">
-        Git Configuration
+        Git Config
       </a>
 </li>
 <li class="md-nav__item">
 <a class="md-nav__link" href="../../forge-configuration/">
-        Magit Forge
+        Forge Config
       </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="../../forge-self-hosted-configuration/">
-        Configure Magit Forge for hosted environments
+<a class="md-nav__link" href="../../github-clone/">
+        GitHub Clone
       </a>
 </li>
-<li class="md-nav__item md-nav__item--nested">
-<input class="md-nav__toggle md-toggle" data-md-toggle="__nav_7_6" id="__nav_7_6" type="checkbox"/>
+<li class="md-nav__item md-nav__item--active md-nav__item--nested">
+<input checked="" class="md-nav__toggle md-toggle" data-md-toggle="__nav_7_6" id="__nav_7_6" type="checkbox"/>
 <div class="md-nav__link md-nav__link--index">
-<a href="../../github/">GitHub</a>
+<a href="../">Magit Git Client</a>
 <label for="__nav_7_6">
 <span class="md-nav__icon md-icon"></span>
 </label>
 </div>
-<nav aria-label="GitHub" class="md-nav" data-md-level="2">
-<label class="md-nav__title" for="__nav_7_6">
-<span class="md-nav__icon md-icon"></span>
-          GitHub
-        </label>
-<ul class="md-nav__list" data-md-scrollfix="">
-<li class="md-nav__item">
-<a class="md-nav__link" href="../../github-clone/">
-        GitHub access for github-clone
-      </a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="../../github/gists/">
-        GitHub Gists
-      </a>
-</li>
-</ul>
-</nav>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="../../gitlab/">
-        GitLab
-      </a>
-</li>
-<li class="md-nav__item md-nav__item--active md-nav__item--nested">
-<input checked="" class="md-nav__toggle md-toggle" data-md-toggle="__nav_7_8" id="__nav_7_8" type="checkbox"/>
-<div class="md-nav__link md-nav__link--index">
-<a href="../">Magit Git Client</a>
-<label for="__nav_7_8">
-<span class="md-nav__icon md-icon"></span>
-</label>
-</div>
 <nav aria-label="Magit Git Client" class="md-nav" data-md-level="2">
-<label class="md-nav__title" for="__nav_7_8">
+<label class="md-nav__title" for="__nav_7_6">
 <span class="md-nav__icon md-icon"></span>
           Magit Git Client
         </label>
 <ul class="md-nav__list" data-md-scrollfix="">
 <li class="md-nav__item">
-<a class="md-nav__link" href="../blame/">
-        Reviewing Commits with Git Blame
+<a class="md-nav__link" href="../create-local-repository/">
+        Create a local Git repository
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../list-local-repositories/">
+        List your local Git repositories
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../status/">
+        Magit Status
       </a>
 </li>
 <li class="md-nav__item">
@@ -1324,23 +1302,13 @@
       </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="../changing-history/">
-        Changing commit History
+<a class="md-nav__link" href="../staging-changes/">
+        Staging changes
       </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="../cherry-picking/">
-        Cherry Picking commits
-      </a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="../clean-up-magit-sessions/">
-        Cleaning up Magit sessions
-      </a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="../commit-amend/">
-        Amend a commit
+<a class="md-nav__link" href="../stashing/">
+        Stashing changes
       </a>
 </li>
 <li class="md-nav__item md-nav__item--active">
@@ -1359,72 +1327,92 @@
     </label>
 <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix="">
 <li class="md-nav__item">
-<a class="md-nav__link" href="#commit-commands">
-    Commit commands
+<a class="md-nav__link" href="#create-a-commit">
+    Create a commit
+  </a>
+<nav aria-label="Create a commit" class="md-nav">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#writing-commit-messages">
+    Writing Commit messages
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#commit-message-history">
+    Commit message history
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#linking-github-issues-and-git-commits">
+    Linking GitHub issues and Git commits
   </a>
 </li>
 </ul>
 </nav>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="../commit-create/">
-        Create a commit
-      </a>
+<a class="md-nav__link" href="#amend-commit">
+    Amend commit
+  </a>
+<nav aria-label="Amend commit" class="md-nav">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#why-amend-a-commit">
+    Why amend a commit
+  </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="../commit-extend/">
-        Extend a commit
-      </a>
+<a class="md-nav__link" href="#reword-commit-message">
+    Reword commit message
+  </a>
+</li>
+</ul>
+</nav>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="../commit-rewrite/">
-        Reword a commit
-      </a>
+<a class="md-nav__link" href="#extend-commit">
+    Extend commit
+  </a>
+<nav aria-label="Extend commit" class="md-nav">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#amending-a-commit-that-is-not-head">
+    Amending a commit that is not HEAD
+  </a>
+</li>
+</ul>
+</nav>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="../commit-squash/">
-        Squash Commits
-      </a>
+<a class="md-nav__link" href="#force-push-a-shared-commit">
+    Force push a shared commit
+  </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="../create-local-repository/">
-        Create a local Git repository
-      </a>
-</li>
+<a class="md-nav__link" href="#squash-commits">
+    Squash Commits
+  </a>
+<nav aria-label="Squash Commits" class="md-nav">
+<ul class="md-nav__list">
 <li class="md-nav__item">
-<a class="md-nav__link" href="../interactive-rebasing/">
-        Interactive Rebasing
-      </a>
-</li>
+<a class="md-nav__link" href="#why-squash-commits">
+    Why Squash commits
+  </a>
+<nav aria-label="Why Squash commits" class="md-nav">
+<ul class="md-nav__list">
 <li class="md-nav__item">
-<a class="md-nav__link" href="../list-local-repositories/">
-        List your local Git repositories
-      </a>
+<a class="md-nav__link" href="#hintavoid-squashing-shared-commits">
+    Hint::Avoid squashing shared commits
+  </a>
 </li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="../reset-commit-history/">
-        Reset Commit History
-      </a>
+</ul>
+</nav>
 </li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="../staging-changes/">
-        Staging changes
-      </a>
+</ul>
+</nav>
 </li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="../stashing/">
-        Stashing changes
-      </a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="../status-fullscreen/">
-        Magit Status Fullscreen
-      </a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="../status/">
-        Magit Status
-      </a>
+</ul>
+</nav>
 </li>
 <li class="md-nav__item">
 <a class="md-nav__link" href="../tag-commit/">
@@ -1437,40 +1425,54 @@
       </a>
 </li>
 <li class="md-nav__item">
+<a class="md-nav__link" href="../reset-commit-history/">
+        Reset Commit History
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../interactive-rebasing/">
+        Interactive Rebasing
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../cherry-picking/">
+        Cherry Picking commits
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../blame/">
+        Reviewing Commits with Git Blame
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../changing-history/">
+        Changing commit History
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../clean-up-magit-sessions/">
+        Cleaning up Magit sessions
+      </a>
+</li>
+<li class="md-nav__item">
 <a class="md-nav__link" href="../version-highlighting/">
         Highlight Version Control Changes
       </a>
 </li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="../forge/">
-        Magit Forge - issues, PRs and forking
-      </a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="../forge/add-database/">
-        Add remote repositories to Magit Forge
-      </a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="../forge/forks/">
-        Create a remote fork
-      </a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="../forge/issues/">
-        Forge Issue management
-      </a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="../forge/pull-requests/">
-        Forge Pull Requests
-      </a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="../remote-repositories/">
-        Working with Remote Repositories
-      </a>
-</li>
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" data-md-toggle="__nav_7_6_18" id="__nav_7_6_18" type="checkbox"/>
+<div class="md-nav__link md-nav__link--index">
+<a href="../remote-repositories/">Remote Repository</a>
+<label for="__nav_7_6_18">
+<span class="md-nav__icon md-icon"></span>
+</label>
+</div>
+<nav aria-label="Remote Repository" class="md-nav" data-md-level="3">
+<label class="md-nav__title" for="__nav_7_6_18">
+<span class="md-nav__icon md-icon"></span>
+          Remote Repository
+        </label>
+<ul class="md-nav__list" data-md-scrollfix="">
 <li class="md-nav__item">
 <a class="md-nav__link" href="../remote-repositories/add-remote/">
         Add remote repository to local repository
@@ -1510,6 +1512,46 @@
 <a class="md-nav__link" href="../remote-repositories/try-pull-requests/">
         Try Pull Requests with Magit
       </a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" data-md-toggle="__nav_7_6_19" id="__nav_7_6_19" type="checkbox"/>
+<div class="md-nav__link md-nav__link--index">
+<a href="../forge/">Forge</a>
+<label for="__nav_7_6_19">
+<span class="md-nav__icon md-icon"></span>
+</label>
+</div>
+<nav aria-label="Forge" class="md-nav" data-md-level="3">
+<label class="md-nav__title" for="__nav_7_6_19">
+<span class="md-nav__icon md-icon"></span>
+          Forge
+        </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../forge/add-database/">
+        Add remote repositories to Magit Forge
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../forge/forks/">
+        Create a remote fork
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../forge/issues/">
+        Forge Issue management
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../forge/pull-requests/">
+        Forge Pull Requests
+      </a>
+</li>
+</ul>
+</nav>
 </li>
 </ul>
 </nav>
@@ -1909,11 +1951,6 @@
         MacOSX Specific configuration
       </a>
 </li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="../../../clojurescript/css-rainbow-colors.md">
-        None
-      </a>
-</li>
 </ul>
 </nav>
 </li>
@@ -2056,9 +2093,89 @@
     </label>
 <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix="">
 <li class="md-nav__item">
-<a class="md-nav__link" href="#commit-commands">
-    Commit commands
+<a class="md-nav__link" href="#create-a-commit">
+    Create a commit
   </a>
+<nav aria-label="Create a commit" class="md-nav">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#writing-commit-messages">
+    Writing Commit messages
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#commit-message-history">
+    Commit message history
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#linking-github-issues-and-git-commits">
+    Linking GitHub issues and Git commits
+  </a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#amend-commit">
+    Amend commit
+  </a>
+<nav aria-label="Amend commit" class="md-nav">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#why-amend-a-commit">
+    Why amend a commit
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#reword-commit-message">
+    Reword commit message
+  </a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#extend-commit">
+    Extend commit
+  </a>
+<nav aria-label="Extend commit" class="md-nav">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#amending-a-commit-that-is-not-head">
+    Amending a commit that is not HEAD
+  </a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#force-push-a-shared-commit">
+    Force push a shared commit
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#squash-commits">
+    Squash Commits
+  </a>
+<nav aria-label="Squash Commits" class="md-nav">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#why-squash-commits">
+    Why Squash commits
+  </a>
+<nav aria-label="Why Squash commits" class="md-nav">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#hintavoid-squashing-shared-commits">
+    Hint::Avoid squashing shared commits
+  </a>
+</li>
+</ul>
+</nav>
+</li>
+</ul>
+</nav>
 </li>
 </ul>
 </nav>
@@ -2071,10 +2188,9 @@
 <svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M20.71 7.04c.39-.39.39-1.04 0-1.41l-2.34-2.34c-.37-.39-1.02-.39-1.41 0l-1.84 1.83 3.75 3.75M3 17.25V21h3.75L17.81 9.93l-3.75-3.75L3 17.25Z"></path></svg>
 </a>
 <h1 id="committing-changes">Committing changes<a class="headerlink" href="#committing-changes" title="Permanent link">λ︎</a></h1>
-<p><code>c</code> opens the commit menu in the Magit status buffer, allowing you to create new commits, <a href="../commit-amend/">amend</a>, <a href="../commit-extend/">extend</a>,  <a href="commit-reword.md">reword</a>.</p>
-<p><a class="glightbox" data-desc-position="bottom" data-height="auto" data-width="100%" href="/images/spacemacs-magit-commit-menu.png"><img alt="Spacemacs Magit - commit menu" src="/images/spacemacs-magit-commit-menu.png"/></a></p>
-<h2 id="commit-commands">Commit commands<a class="headerlink" href="#commit-commands" title="Permanent link">λ︎</a></h2>
+<p><span class="keys"><kbd>c</kbd></span> opens the commit menu in the Magit status buffer, allowing you to create, <a href="#amend-commit">amend</a>, <a href="#extend-commit">extend</a>, <a href="#reword-commit">reword</a>, <a href="#reword-commit">squash</a> commits.</p>
 <p>The Magit commit menu can be used to create new commits at the HEAD of the commit history.</p>
+<p><a class="glightbox" data-desc-position="bottom" data-height="auto" data-width="100%" href="/images/spacemacs-magit-commit-menu.png"><img alt="Spacemacs Magit - commit menu" src="/images/spacemacs-magit-commit-menu.png"/></a></p>
 <p>Changing a commit generates a new SHA identity, creating a commit in the history, replacing the current HEAD commit.</p>
 <table>
 <thead>
@@ -2087,32 +2203,122 @@
 <tbody>
 <tr>
 <td>create</td>
-<td><code>c c</code></td>
+<td><span class="keys"><kbd>c</kbd></span> <span class="keys"><kbd>c</kbd></span></td>
 <td>creates a new commit and prompts for a commit message</td>
 </tr>
 <tr>
 <td>Amend</td>
-<td><code>c a</code></td>
+<td><span class="keys"><kbd>c</kbd></span> <span class="keys"><kbd>a</kbd></span></td>
 <td>add staged changes to HEAD commit and commit message can be edited</td>
 </tr>
 <tr>
 <td>Reword</td>
-<td><code>c w</code></td>
+<td><span class="keys"><kbd>c</kbd></span> <span class="keys"><kbd>w</kbd></span></td>
 <td>edit the commit message, ignore any staged changes</td>
 </tr>
 <tr>
 <td>Extend</td>
-<td><code>c e</code></td>
+<td><span class="keys"><kbd>c</kbd></span> <span class="keys"><kbd>e</kbd></span></td>
 <td>add all staged files to the HEAD commit, no message editing</td>
 </tr>
 </tbody>
 </table>
+<h2 id="create-a-commit">Create a commit<a class="headerlink" href="#create-a-commit" title="Permanent link">λ︎</a></h2>
+<p><span class="keys"><kbd>c</kbd></span> <span class="keys"><kbd>c</kbd></span> in Magit status buffer, <span class="keys"><kbd class="key-space">Space</kbd></span> <span class="keys"><kbd>g</kbd></span> <span class="keys"><kbd>s</kbd></span> creates a new commit that will become the new HEAD in the commit history.</p>
+<p>Two new buffers open
+* The commit message buffer - to write multi-line commit messages
+* The diff buffer - a visual diff of changes to be included in this commit</p>
+<ul>
+<li><span class="keys"><kbd class="key-comma">,</kbd></span> <span class="keys"><kbd class="key-comma">,</kbd></span> to create the commit</li>
+<li><span class="keys"><kbd class="key-comma">,</kbd></span> <span class="keys"><kbd>k</kbd></span> to cancel the commit (leaves changes staged)</li>
+</ul>
+<p><a class="glightbox" data-desc-position="bottom" data-height="auto" data-width="100%" href="/images/spacemacs-magit-commit-message-menu.png"><img alt="Spacemacs Magit - commit or cancel" src="/images/spacemacs-magit-commit-message-menu.png"/></a></p>
+<h3 id="writing-commit-messages">Writing Commit messages<a class="headerlink" href="#writing-commit-messages" title="Permanent link">λ︎</a></h3>
+<p>Type in a suitable commit message that explains the purpose and value of this commit. The first line should be a succinct summary of the purpose of the change.</p>
+<p>68 characters is the recommended maximum length of the first line of the commit message.  At 69 characters onward they change color to give a visual guide to the maximum length.  In the body, lines are automatically wrapped once a space is typed after a word that the maximum length.</p>
+<p><a class="glightbox" data-desc-position="bottom" data-height="auto" data-width="100%" href="/images/spacemacs-magit-commit-message-buffer.png"><img alt="Spacemacs Magit - message buffer" src="/images/spacemacs-magit-commit-message-buffer.png"/></a></p>
+<h3 id="commit-message-history">Commit message history<a class="headerlink" href="#commit-message-history" title="Permanent link">λ︎</a></h3>
+<p><span class="keys"><kbd>g</kbd></span> <span class="keys"><kbd>k</kbd></span> will paste the previous commit message in the commit message buffer when creating a commit in Magit. Further <span class="keys"><kbd>g</kbd></span> <span class="keys"><kbd>k</kbd></span>  key presses will cycle backwards through the previous commit messages</p>
+<p><span class="keys"><kbd>g</kbd></span> <span class="keys"><kbd>j</kbd></span> will cycle forwards through commit messages</p>
+<p>Scrolling through the commit history is a simple way to create consistent style of commit messages without having to look at previous commits separately.</p>
+<p>Commit messages are remembered even after a reset (tested with soft reset)</p>
+<p>Previous messages are only available once a commit is made. If a change is cancelled, <span class="keys"><kbd class="key-comma">,</kbd></span> <span class="keys"><kbd>k</kbd></span> before the commit then the message is not saved. Instead, select the message and yank, <code>y</code>, into the kill ring before killing the commit.</p>
+<h3 id="linking-github-issues-and-git-commits">Linking GitHub issues and Git commits<a class="headerlink" href="#linking-github-issues-and-git-commits" title="Permanent link">λ︎</a></h3>
+<p>Including a reference to an issue, e.g. <code>GH-42</code> or <code>#42</code>, you can link a commit to a GitHub issue.</p>
+<p>Include the phrase <code>Resolve #42</code> the body of the commit message to automatically close an issue when a commit is pushed to GitHub.</p>
+<p>Lines starting with <code>#</code> are comments and not included in the commit message, so avoid using the <code>#42</code> short form at the start of the line in Magit.</p>
+<h2 id="amend-commit">Amend commit<a class="headerlink" href="#amend-commit" title="Permanent link">λ︎</a></h2>
+<p>Stage changes to be added to the last commit, i.e. HEAD.</p>
+<p><span class="keys"><kbd>c</kbd></span> to enter the commit transient state menu</p>
+<p><span class="keys"><kbd>a</kbd></span> in the commit menu to amend a commit</p>
+<p>The commit transient state buffers appear and shows details of the previous commit with the additional staged changes.</p>
+<p>Edit the commit message and review the diffs for all the files added to the commit (ensuring a meaningful commit message is written).</p>
+<p><span class="keys"><kbd class="key-comma">,</kbd></span> <span class="keys"><kbd class="key-comma">,</kbd></span> to confirm the changes should be committed.</p>
+<p><span class="keys"><kbd class="key-comma">,</kbd></span> <span class="keys"><kbd>k</kbd></span> to cancel changes and leave the previous commit unchanged.</p>
+<p style="text-align:center">
+<iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen="" frameborder="0" height="315" src="https://www.youtube.com/embed/2NNrc61RVx4" title="YouTube video player" width="560"></iframe>
+</p>
+<details class="hint">
+<summary>Force push a shared commit</summary>
+<p>If a commit is changed after it is pushed to a remote repository, then a force push will be required.  Please confirm with other maintainers of the code if a force push is acceptable as it could interrupt their development.  A more suitable practice can be to create a new commit and push that rather than rewrite history.</p>
+<p><code>P</code> opens the Push menu in Magit status buffer (<code>SPC g s</code>).</p>
+<p><code>-f</code> sets the force-with-lease option to rewrite the shared history in the remote repository</p>
+<p><code>p</code> pushes to the new commit to the remote repository and replaces the HEAD commit in that repository.</p>
+</details>
+<h3 id="why-amend-a-commit">Why amend a commit<a class="headerlink" href="#why-amend-a-commit" title="Permanent link">λ︎</a></h3>
+<p>Amend creates a new commit with both the currently staged changes and the change in the previous commit.</p>
+<p>If you forgot to include some changes in the last commit, then this is a way to avoid two commits for the same logical change.</p>
+<p>As amending also allows you to edit the commit message, this can be updated to fix errors or add more details.</p>
+<h3 id="reword-commit-message">Reword commit message<a class="headerlink" href="#reword-commit-message" title="Permanent link">λ︎</a></h3>
+<p><span class="keys"><kbd>c</kbd></span> <span class="keys"><kbd>w</kbd></span> allow you to reword the commit message of the previous commit. The new commit replaces the current HEAD commit.</p>
+<p>Any staged changes are ignored and not amended to the previous commit.</p>
+<h2 id="extend-commit">Extend commit<a class="headerlink" href="#extend-commit" title="Permanent link">λ︎</a></h2>
+<p><span class="keys"><kbd>c</kbd></span> <span class="keys"><kbd>e</kbd></span> will <strong>immediately</strong> add all staged changes to the previous commit, creating an new commit that replaces the previous commit.  You are not prompted, so use this with caution.</p>
+<p>No prompt is given to edit the commit message, so this is only useful if you simply just missed a change or file and the commit message already describes the change in full detail.</p>
+<details class="hint">
+<summary>How to undo a commit extend</summary>
+<p><span class="keys"><kbd class="key-o">O</kbd></span> to select the Magit Reset menu.</p>
+<p><span class="keys"><kbd>s</kbd></span> for a soft reset, assuming you only wish to reset the commit (leaves staged and working files as they are).</p>
+<p>Select <code>ORIG_HEAD</code> to select the unchanged HEAD commit from the remote repository, assuming it has the required commit.</p>
+</details>
+<h3 id="amending-a-commit-that-is-not-head">Amending a commit that is not HEAD<a class="headerlink" href="#amending-a-commit-that-is-not-head" title="Permanent link">λ︎</a></h3>
+<p><a href="../interactive-rebasing/">Interactive rebasing</a> is required to amend a commit that is not currently the HEAD commit.</p>
+<p>The amend command only works with the HEAD commit and Git doesn't provide a specific command for modifying a commit other than HEAD.</p>
+<div class="admonition hint">
+<p class="admonition-title">Avoid amending shared commits</p>
+<p>Amending a commit will change the commit reference number (the SHA hash code) as this is based in part on the time of commit as well as the contents.</p>
+<p>Use the <code>-f</code> force flag to push an amended commit to a shared repository (e.g. GitHub or GitLab).</p>
+<p><span class="keys"><kbd class="key-p">P</kbd></span> <span class="keys"><kbd class="key-minus">-</kbd></span> <span class="keys"><kbd>f</kbd></span> <span class="keys"><kbd>p</kbd></span> to force push to the remote repository.</p>
+</div>
+<h2 id="force-push-a-shared-commit">Force push a shared commit<a class="headerlink" href="#force-push-a-shared-commit" title="Permanent link">λ︎</a></h2>
+<p>If you already shared a commit that you want to extend, please ask those you work with if its okay (as it could interrupt their development).  For shared commits, its better practice to create a new commit and push that rather than rewrite history.</p>
+<p><code>P</code> opens the Push menu in Magit status buffer (<code>SPC g s</code>).</p>
+<p><code>-f</code> sets the force-with-lease option to rewrite the shared history in the remote repository</p>
+<p><code>p</code> pushes to the new commit to the remote repository and replaces the HEAD commit in that repository.</p>
+<h2 id="squash-commits">Squash Commits<a class="headerlink" href="#squash-commits" title="Permanent link">λ︎</a></h2>
+<p><code>c</code> to enter the commit transient state menu</p>
+<p><code>s</code> in the commit menu to amend a commit</p>
+<p>The top buffer shows the local Git log, listing all the commit history.</p>
+<p>The bottom buffer shows the magit-diff output, so you can see all the changes of the current commit.</p>
+<p><a class="glightbox" data-desc-position="bottom" data-height="auto" data-width="100%" href="/images/spacemacs-magit-commit-squash-example.png"><img alt="Spacemacs Magit - Commit Squash" src="/images/spacemacs-magit-commit-squash-example.png"/></a></p>
+<p>Move the cursor to the commit you wish to squash into its previous commit</p>
+<p><code>, ,</code> or <code>C-c C-c</code> to confirm the commit(s) should be squashed.</p>
+<p><code>, k</code> or <code>C-c C-k</code> to cancel changes and leave the commit history unchanged.</p>
+<h3 id="why-squash-commits">Why Squash commits<a class="headerlink" href="#why-squash-commits" title="Permanent link">λ︎</a></h3>
+<p>The commit history should help the development team understand the reasons for changes as well as what has actually changed.</p>
+<p>Squashing commits is useful for joining together commits that form a logical change.  If a change is spread over several commits, then squashing those commits together can improve the commit history.</p>
+<blockquote>
+<h4 id="hintavoid-squashing-shared-commits">Hint::Avoid squashing shared commits<a class="headerlink" href="#hintavoid-squashing-shared-commits" title="Permanent link">λ︎</a></h4>
+<p>Squashing a commit will change the commit reference number (the SHA hash code) as this is based in part on the time of commit as well as the contents.  If you need to squash a commit history that has already been shared you should tell everyone before doing so as they will have to pull the new commit history.</p>
+<p>Use the <code>-f</code> force flag to push a squashed commit to a shared repository (e.g. GitHub or GitLab).</p>
+<p><code>P -f p</code> to force push to the remote repository.</p>
+</blockquote>
 <hr/>
 <div class="md-source-file">
 <small>
     
       Last update:
-      <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">December 2, 2022</span>
+      <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">December 26, 2022</span>
 </small>
 </div>
 </article>
@@ -2126,7 +2332,7 @@
 </main>
 <footer class="md-footer">
 <nav aria-label="Footer" class="md-footer__inner md-grid">
-<a aria-label="Previous: Amend a commit" class="md-footer__link md-footer__link--prev" href="../commit-amend/" rel="prev">
+<a aria-label="Previous: Stashing changes" class="md-footer__link md-footer__link--prev" href="../stashing/" rel="prev">
 <div class="md-footer__button md-icon">
 <svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"></path></svg>
 </div>
@@ -2135,17 +2341,17 @@
 <span class="md-footer__direction">
                 Previous
               </span>
-              Amend a commit
+              Stashing changes
             </div>
 </div>
 </a>
-<a aria-label="Next: Create a commit" class="md-footer__link md-footer__link--next" href="../commit-create/" rel="next">
+<a aria-label="Next: Tag a commit" class="md-footer__link md-footer__link--next" href="../tag-commit/" rel="next">
 <div class="md-footer__title">
 <div class="md-ellipsis">
 <span class="md-footer__direction">
                 Next
               </span>
-              Create a commit
+              Tag a commit
             </div>
 </div>
 <div class="md-footer__button md-icon">
